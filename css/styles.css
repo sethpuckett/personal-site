@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'PressStart2P';
+    src: url("../fonts/PressStart2p.ttf");
+}
+
 * {
     box-sizing: border-box;
 } 
@@ -16,7 +21,7 @@
 }
 
 body {
-    font-family: 'Lora', serif;
+    font-family: 'PressStart2P', serif;
     color: #565656;
 }
 
@@ -64,10 +69,12 @@ header ul li.selected {
 .box {
     width: 400px;
     height: 300px;
-    border: 1px solid #76323F;
     margin: 5px;
+    /*
+    border: 1px solid #76323F;
     box-shadow: 2px 2px 5px #56120F;
     border-radius: 3px;
+    */
     float: left;
 }
 
