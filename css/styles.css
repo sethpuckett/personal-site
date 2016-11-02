@@ -67,15 +67,11 @@ header ul li.selected {
 }
 
 .box {
-    width: 400px;
-    height: 300px;
-    margin: 5px;
-    /*
-    border: 1px solid #76323F;
-    box-shadow: 2px 2px 5px #56120F;
-    border-radius: 3px;
-    */
     float: left;
+    border: 10px solid black;
+    border-image: url("../img/green-border.png");
+    border-image-slice: 32;
+    border-image-repeat: repeat;
 }
 
 #headshot img {

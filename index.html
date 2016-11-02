@@ -10,11 +10,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Proza+Libre:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="plugins/googleslides/jquery.googleslides.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="content" class="clearfix">
-        <header class="clearfix">
+    <div id="content" class="container">
+        <header class="container">
             <ul>
                 <li class="selected">Home</li>
                 <li>Portfolio</li>
@@ -22,56 +23,62 @@
             </ul>
         </header>
 
-        <div id="bio" class="box">
-            <div id="headshot">
-                <img src="img/map.png">
+        <div class="row">
+            <div id="bio" class="box col-md-6">
+                <div id="headshot">
+                    <img src="img/map.png">
+                </div>
+                <div class="text-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptates tempora aliquid facilis dolore repudiandae illum, omnis amet adipisci voluptate veritatis voluptatem totam quod, impedit ipsam nam, vero eum dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, hic! Ut ratione fuga dolorem laudantium alias sed magni adipisci, veniam expedita excepturi eveniet corporis inventore rerum velit nihil, officiis est!</p>
+                </div>
             </div>
-            <div class="text-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptates tempora aliquid facilis dolore repudiandae illum, omnis amet adipisci voluptate veritatis voluptatem totam quod, impedit ipsam nam, vero eum dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, hic! Ut ratione fuga dolorem laudantium alias sed magni adipisci, veniam expedita excepturi eveniet corporis inventore rerum velit nihil, officiis est!</p>
-            </div>
-        </div>
-        <div id="slideshow-container" class="box">
-            <div id="slideshow"></div>
-        </div>
-        <div id="location" class="box">
-            <div id="location-wrapper">
-                <div id="location-map"></div>
-                <div id="location-description">Seth is in Washington, DC, USA</div>
+            <div id="slideshow-container" class="box col-md-6">
+                <div id="slideshow"></div>
             </div>
         </div>
-        <div id="schedule" class="box">
-            <div class="title">Schedule</div>
-            <ul>
-                <li>
-                    <div class="title">Some Workshop</div>
-                    <div class="date">08/01/2016</div>
-                </li>
-                <li>
-                    <div class="title">Some Other Workshop</div>
-                    <div class="date">09/15/2016</div>
-                </li>
-                <li class="past">
-                    <div class="title">Some Other Workshop</div>
-                    <div class="date">09/15/2016</div>
-                </li>
-            </ul>
+        <div class="row">
+            <div id="location" class="box col-md-6">
+                <div id="location-wrapper">
+                    <div id="location-map"></div>
+                    <div id="location-description">Seth is in Washington, DC, USA</div>
+                </div>
+            </div>
+            <div id="schedule" class="box col-md-6">
+                <div class="title">Schedule</div>
+                <ul>
+                    <li>
+                        <div class="title">Some Workshop</div>
+                        <div class="date">08/01/2016</div>
+                    </li>
+                    <li>
+                        <div class="title">Some Other Workshop</div>
+                        <div class="date">09/15/2016</div>
+                    </li>
+                    <li class="past">
+                        <div class="title">Some Other Workshop</div>
+                        <div class="date">09/15/2016</div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div id="projects" class="box">
-            <div class="title">Projects</div>
-            <ul>
-                <li><a href="https://github.com/excellalabs/excella-careers">Excella Careers</a></li>
-                <li><a href="https://github.com/sethpuckett/got-leaderboard">Game of Thrones Death Pool</a></li>
-                <li><a href="https://github.com/sethpuckett/phaser-game-of-life">Phaser - Game of Life</a></li>
-            </ul>
-        </div>
-        <div id="links" class="box">
-            <ul>
-                <li>
-                    <div class="logo"></div>
-                    <div class="service"></div>
-                    <div class="username"></div>
-                </li>
-            </ul>
+        <div class="row">
+            <div id="projects" class="box col-md-6">
+                <div class="title">Projects</div>
+                <ul>
+                    <li><a href="https://github.com/excellalabs/excella-careers">Excella Careers</a></li>
+                    <li><a href="https://github.com/sethpuckett/got-leaderboard">Game of Thrones Death Pool</a></li>
+                    <li><a href="https://github.com/sethpuckett/phaser-game-of-life">Phaser - Game of Life</a></li>
+                </ul>
+            </div>
+            <div id="links" class="box col-md-6">
+                <ul>
+                    <li>
+                        <div class="logo"></div>
+                        <div class="service"></div>
+                        <div class="username"></div>
+                    </li>
+                </ul>
+            </div>
         </div>
         
         <footer class="clear">&copy; 2016 Seth Puckett</footer>
@@ -81,6 +88,7 @@
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
     <script src="plugins/googleslides/jquery.googleslides.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
