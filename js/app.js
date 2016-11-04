@@ -1,9 +1,12 @@
 $(document).ready(function() {
-    $('#slideshow').googleslides({
-        userid:'115528839112598673902', 
-        albumid:'5710317752556741025',
-        imgmax: 396,
-        albumlink: false,
-        time: 10000
-    });
+  $(".side-nav a").click(function(event) {
+    event.preventDefault();
+    var id = $(this).attr("href");
+
+    $(".side-nav li").removeClass("active");
+    $(this).parent().addClass("active");
+
+    $(".nav-content .nav-pane").removeClass("active");
+    $(id).addClass("active");
+  })
 });

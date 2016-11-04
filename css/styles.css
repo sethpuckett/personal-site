@@ -21,6 +21,7 @@
 }
 
 body {
+    font-size: 12px;
     font-family: 'PressStart2P', serif;
     color: #565656;
     background-color: #FFCCC5;
@@ -28,45 +29,25 @@ body {
 
 #content {
     width: 960px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 header {
-    text-align: center;
+    height: 60px;
+    background: url("../img/blue-pink-sky.png") repeat center center;
+    background-size: 300px 60px;
 }
 
-header ul {
-    list-style: none;
-    float: right;
-    margin-right: 1em;
-}
-
-header ul li {
-    display: inline-block;
-    font-size: 1.5em;
-    color: #76323F;
-    margin-left: 0;
-    padding-left: 0;
-    padding-right: .2em;
-    margin-right: .1em;
-    border-right: 1px solid #C6929F;
-    cursor: pointer;
-}
-
-header ul li:last-child {
-    padding-right: 0;
-    margin-right: 0;
-    border-right: none;
-}
-
-header ul li.selected {
-    font-weight: bold;
+footer {
+    height: 100px;
+    background: url("../img/street.png") repeat center center;
+    background-size: 300px 100px;
+    padding-top: 70px;
 }
 
 .box {
     width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     padding: 5px;
     border: 20px solid black;
     border-image: url("../img/blue-border.png");
@@ -74,24 +55,14 @@ header ul li.selected {
     border-image-repeat: repeat;
 }
 
+.text-content {
+    line-height: 1.5;
+}
+
 #headshot img {
-    width: 160px;
-    height: 160px;
+    width: 40%;
     float: left;
-    margin-right: 5px;
-}
-
-#slideshow-container {
-    text-align: center;
-}
-
-#slideshow img {
-    border-radius: 3px;
-}
-
-#slideshow .captionWrapper {
-    padding-left: 5px;
-    font-family: 'PressStart2P', serif;
+    margin-right: 10px;
 }
 
 #location-wrapper {
@@ -99,7 +70,6 @@ header ul li.selected {
 }
 
 #location-map {
-    height: 200px;
     overflow: hidden;
 }
 
@@ -109,8 +79,9 @@ header ul li.selected {
 
 #location-description {
     color: #868686;
-    font-size: .75em;
-    margin-top: 5px;
+    font-size: .6em;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 #schedule ul {
@@ -134,6 +105,58 @@ header ul li.selected {
     color: #868686;
 }
 
+#links ul {
+    list-style: none;
+    margin-top: 5px;
+    line-height: 1.25;
+}
+
 footer {
     text-align: center;
+}
+
+.side-nav {
+    margin-top: 15px;
+    padding: 10px;
+    list-style: none;
+}
+
+.side-nav li {
+    margin-bottom: 10px;
+}
+
+.side-nav li.active::before {
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 3px;
+    background-image: url('../img/white-arrow.png');
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    content:"";
+}
+
+.side-nav a {
+    font-size: 1.75em;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.side-nav a:visited {
+    color: #FFF;
+}
+
+.nav-content .nav-pane {
+    display: none;
+}
+
+.nav-content .active {
+    display: inline-block;
+}
+
+@media screen and (max-width: 960px) {
+    #content {
+        width: 100%;
+    }
 }
