@@ -20,16 +20,23 @@
     clear: both;
 }
 
-body {
+html, body {
+    height: 100%;
     font-size: 12px;
     font-family: 'PressStart2P', serif;
     color: #565656;
     background-color: #FFCCC5;
 }
 
+.wrapper {
+    min-height: 100%;
+}
+
 #content {
     width: 960px;
-    margin: 30px auto;
+    margin: 10px auto 0px;
+    overflow: auto;
+    padding-bottom: 65px;
 }
 
 header {
@@ -39,15 +46,24 @@ header {
 }
 
 footer {
-    height: 100px;
+    text-align: center;
+    position: relative;
+    height: 75px;
+    padding-top: 21px;
+    margin-top: -75px; /* negative value of footer height */
     background: url("../img/street.png") repeat center center;
-    background-size: 300px 100px;
-    padding-top: 70px;
+    background-size: 235px 75px;
+    clear: both;
+}
+
+.col {
+  padding-right:7px;
+  padding-left:7px;
 }
 
 .box {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     padding: 5px;
     border: 20px solid black;
     border-image: url("../img/blue-border.png");
@@ -59,10 +75,15 @@ footer {
     line-height: 1.5;
 }
 
+#bio {
+    height: 461px;
+}
+
 #headshot img {
     width: 40%;
     float: left;
     margin-right: 10px;
+    border-radius: 3px;
 }
 
 #location-wrapper {
@@ -71,6 +92,7 @@ footer {
 
 #location-map {
     overflow: hidden;
+    border-radius: 3px;
 }
 
 #location-map img {
@@ -82,6 +104,11 @@ footer {
     font-size: .6em;
     margin-top: 10px;
     margin-bottom: 5px;
+}
+
+
+li {
+    padding-top: 2px;
 }
 
 #schedule ul {
@@ -108,11 +135,7 @@ footer {
 #links ul {
     list-style: none;
     margin-top: 5px;
-    line-height: 1.25;
-}
-
-footer {
-    text-align: center;
+    padding-left: 15px;
 }
 
 .side-nav {
@@ -155,8 +178,47 @@ footer {
     display: inline-block;
 }
 
+.logo {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.logo img {
+    width: 100%;
+    image-rendering: pixelated;
+}
+
+#links li {
+    position: relative;
+}
+
+.link-info {
+    display: inline-block;
+    padding-left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.link-info .service {
+    font-size: 1.25em;
+}
+
+
+.link-info .username {
+    padding-left: 2px;
+    color: #868686;
+    font-size: .6em;
+}
+
 @media screen and (max-width: 960px) {
     #content {
         width: 100%;
     }
 }
+
+/* 
+* light blue: #b5ebf2;
+* dark blue: #64b0ff;
+*/
