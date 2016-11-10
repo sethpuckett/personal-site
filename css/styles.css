@@ -71,6 +71,15 @@ footer {
     border-image-repeat: repeat;
 }
 
+.box:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
 .text-content {
     line-height: 1.5;
 }
@@ -236,13 +245,25 @@ li {
     }
 
     #headshot img {
-        width: 110px;
+        width: 125px;
         max-height: 100%;
     }
 }
 
+@media screen and (max-width: 480px) {
+    #nav-wrapper {
+        text-align: center;
+    }
+
+    ul.side-nav li {
+        display: inline-block;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
 @media screen and (max-width: 380px) {
-    
+
     #headshot {
         text-align: center;
     }
