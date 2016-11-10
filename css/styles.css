@@ -1,3 +1,7 @@
+/************************
+* Shared
+************************/
+
 @font-face {
     font-family: 'PressStart2P';
     src: url("../fonts/PressStart2p.ttf");
@@ -20,48 +24,12 @@
     clear: both;
 }
 
-html, body {
-    height: 100%;
-    font-size: 11px;
-    font-family: 'PressStart2P', serif;
-    color: #565656;
-    background-color: #FFCCC5;
-}
-
-.wrapper {
-    min-height: 100%;
-}
-
-#content {
-    width: 992px;
-    margin: 10px auto 0px;
-    overflow: auto;
-    padding-bottom: 65px;
-}
-
 .loader {
     text-align: center;
 }
 
 .loader img {
     width: 50%;
-}
-
-header {
-    height: 60px;
-    background: url("../img/blue-pink-sky.png") repeat center center;
-    background-size: 300px 60px;
-}
-
-footer {
-    text-align: center;
-    position: relative;
-    height: 75px;
-    padding-top: 21px;
-    margin-top: -75px; /* negative value of footer height */
-    background: url("../img/street.png") repeat center center;
-    background-size: 235px 75px;
-    clear: both;
 }
 
 .col {
@@ -88,16 +56,148 @@ footer {
   height: 0;
 }
 
-.text-content {
-    line-height: 1.5;
+ul {
+    list-style: none;
+    margin-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-#headshot img {
+li {
+    padding-top: 2px;
+    margin-bottom: 10px;
+}
+
+.link-info .service, #projects .title, #writing .title, #schedule .title {
+    font-size: 1.3em;
+}
+
+.link-info .username, #projects .description, #writing .date, #schedule .date, #schedule .past .title {
+    padding-left: 2px;
+    color: #868686;
+    font-size: .8em;
+}
+
+
+
+
+/************************
+* Main
+************************/
+
+html, body {
+    height: 100%;
+    font-size: 11px;
+    font-family: 'PressStart2P', serif;
+    color: #565656;
+    background-color: #FFCCC5;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+#content {
+    width: 992px;
+    margin: 10px auto 0px;
+    overflow: auto;
+    padding-bottom: 65px;
+}
+
+
+
+
+
+/************************
+* Header/Footer
+************************/
+
+header {
+    height: 60px;
+    background: url("../img/blue-pink-sky.png") repeat center center;
+    background-size: 300px 60px;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    height: 75px;
+    padding-top: 21px;
+    margin-top: -75px; /* negative value of footer height */
+    background: url("../img/street.png") repeat center center;
+    background-size: 235px 75px;
+    clear: both;
+}
+
+
+
+
+
+/************************
+* Navigation
+************************/
+
+#nav {
+    margin-top: 15px;
+    padding: 10px;
+    list-style: none;
+}
+
+#nav li.active::before {
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 3px;
+    background-image: url('../img/white-arrow.png');
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    content:"";
+}
+
+#nav a {
+    font-size: 1.75em;
+    text-decoration: none;
+    color: #FFF;
+}
+
+#nav a:visited {
+    color: #FFF;
+}
+
+#nav-content .nav-pane {
+    display: none;
+}
+
+#nav-content .active {
+    display: inline-block;
+}
+
+
+
+
+/************************
+* Bio
+************************/
+
+#bio #headshot img {
     width: 40%;
     float: left;
     margin-right: 10px;
     border-radius: 3px;
 }
+
+#bio .text-content {
+    line-height: 1.5;
+}
+
+
+
+
+
+/************************
+* Location
+************************/
 
 #location-wrapper {
     text-align: center;
@@ -119,61 +219,21 @@ footer {
     margin-bottom: 5px;
 }
 
-ul {
-    list-style: none;
-    margin-top: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
-li {
-    padding-top: 2px;
-    margin-bottom: 10px;
-}
 
-.side-nav {
-    margin-top: 15px;
-    padding: 10px;
-    list-style: none;
-}
 
-.side-nav li.active::before {
-    position: absolute;
-    margin-left: -25px;
-    margin-top: 3px;
-    background-image: url('../img/white-arrow.png');
-    background-size: 20px 20px;
-    display: inline-block;
-    width: 20px; 
-    height: 20px;
-    content:"";
-}
 
-.side-nav a {
-    font-size: 1.75em;
-    text-decoration: none;
-    color: #FFF;
-}
+/************************
+* Links
+************************/
 
-.side-nav a:visited {
-    color: #FFF;
-}
-
-.nav-content .nav-pane {
-    display: none;
-}
-
-.nav-content .active {
-    display: inline-block;
-}
-
-.logo {
+#links .logo {
     width: 55px;
     height: 55px;
     display: inline-block;
 }
 
-.logo img {
+#links .logo img {
     width: 100%;
     image-rendering: pixelated;
 }
@@ -199,20 +259,13 @@ li {
     transform: translateY(-50%);
 }
 
-.link-info .service, #projects .title, #writing .title, #schedule .title {
-    font-size: 1.3em;
-}
 
-#writing .past .title, #schedule .past .title {
-    font-size: 1em;
-    color: #868686;
-}
 
-.link-info .username, #projects .description, #writing .date, #schedule .date {
-    padding-left: 2px;
-    color: #868686;
-    font-size: .7em;
-}
+
+
+/************************
+* Media Queries
+************************/
 
 @media screen and (max-width: 992px) {
 
@@ -238,11 +291,12 @@ li {
 }
 
 @media screen and (max-width: 480px) {
+
     #nav-wrapper {
         text-align: center;
     }
 
-    ul.side-nav li {
+    #nav li {
         display: inline-block;
         margin-left: 5%;
         margin-right: 5%;

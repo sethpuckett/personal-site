@@ -7,14 +7,14 @@ $(document).ready(function() {
     callback: loadSpreadsheetData
   });
 
-  $(".side-nav a").click(function(event) {
+  $("#nav a").click(function(event) {
     event.preventDefault();
     var id = $(this).attr("href");
 
-    $(".side-nav li").removeClass("active");
+    $("#nav li").removeClass("active");
     $(this).parent().addClass("active");
 
-    $(".nav-content .nav-pane").removeClass("active");
+    $("#nav-content .nav-pane").removeClass("active");
     $(id).addClass("active");
   });
 
