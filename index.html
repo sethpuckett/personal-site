@@ -154,6 +154,9 @@
                         <div id="stuff" class="nav-pane">
                             <div class="col-sm-7 col">
                                 <div id="projects" class="box">
+                                    <div class="loader" id="projects-loader">
+                                        <img src="img/loader.svg">
+                                    </div>
                                     <ul>
                                         <li>
                                             <div class="title">Game of Thrones Death Pool</div>
@@ -178,6 +181,9 @@
                             </div>
                             <div class="col-sm-5 col">
                                 <div id="writing" class="box">
+                                    <div class="loader" id="writing-loader">
+                                        <img src="img/loader.svg">
+                                    </div>
                                     <ul>
                                         <li>
                                             <div class="title">Post 1</div>
@@ -187,17 +193,20 @@
                                             <div class="title">Post 2</div>
                                             <div class="date">10/15/2016</div>
                                         </li>
-                                        <li>
+                                        <li class="past">
                                             <div class="title">Post 3</div>
                                             <div class="date">7/2/2016</div>
                                         </li>
-                                        <li>
+                                        <li class="past">
                                             <div class="title">Post 3</div>
                                             <div class="date">4/22/2016</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div id="schedule" class="box">
+                                    <div class="loader" id="schedule-loader">
+                                        <img src="img/loader.svg">
+                                    </div>
                                     <ul>
                                         <li>
                                             <div class="title">Workshop 1</div>
@@ -207,11 +216,11 @@
                                             <div class="title">Lecture 2</div>
                                             <div class="date">10/15/2016</div>
                                         </li>
-                                        <li>
+                                        <li class="past">
                                             <div class="title">Panel 3</div>
                                             <div class="date">7/2/2016</div>
                                         </li>
-                                        <li>
+                                        <li class="past">
                                             <div class="title">Conference 4</div>
                                             <div class="date">4/22/2016</div>
                                         </li>
@@ -225,37 +234,6 @@
                     </div>
 
                 </div>
-                <!--
-                <div class="col-sm-6">
-                    <div id="schedule" class="box">
-                        <div class="title">Schedule</div>
-                        <ul>
-                            <li>
-                                <div class="title">Some Workshop</div>
-                                <div class="date">08/01/2016</div>
-                            </li>
-                            <li>
-                                <div class="title">Some Other Workshop</div>
-                                <div class="date">09/15/2016</div>
-                            </li>
-                            <li class="past">
-                                <div class="title">Some Other Workshop</div>
-                                <div class="date">09/15/2016</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div id="projects" class="box">
-                        <div class="title">Projects</div>
-                        <ul>
-                            <li><a href="https://github.com/excellalabs/excella-careers">Excella Careers</a></li>
-                            <li><a href="https://github.com/sethpuckett/got-leaderboard">Game of Thrones Death Pool</a></li>
-                            <li><a href="https://github.com/sethpuckett/phaser-game-of-life">Phaser - Game of Life</a></li>
-                        </ul>
-                    </div>
-                </div>
-                -->
             </div>
         </div>
     </div>
@@ -267,6 +245,7 @@
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="plugins/tabletop-1.4.2/src/tabletop.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

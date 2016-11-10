@@ -39,6 +39,14 @@ html, body {
     padding-bottom: 65px;
 }
 
+.loader {
+    text-align: center;
+}
+
+.loader img {
+    width: 50%;
+}
+
 header {
     height: 60px;
     background: url("../img/blue-pink-sky.png") repeat center center;
@@ -111,47 +119,22 @@ footer {
     margin-bottom: 5px;
 }
 
-
-li {
-    padding-top: 2px;
-}
-
-#schedule ul {
-    list-style: none;
-    font-size: 1.25em;
-    padding: 0;
-    margin: 0;
-}
-
-#schedule .date {
-    display: inline-block;
-    font-size: .75em;
-}
-
-#schedule .title {
-    display: inline-block;
-    font-weight: bold;
-}
-
-#schedule .past {
-    color: #868686;
-}
-
-#links ul {
+ul {
     list-style: none;
     margin-top: 5px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
+li {
+    padding-top: 2px;
+    margin-bottom: 10px;
+}
+
 .side-nav {
     margin-top: 15px;
     padding: 10px;
     list-style: none;
-}
-
-.side-nav li {
-    margin-bottom: 10px;
 }
 
 .side-nav li.active::before {
@@ -216,15 +199,19 @@ li {
     transform: translateY(-50%);
 }
 
-.link-info .service {
-    font-size: 1.25em;
+.link-info .service, #projects .title, #writing .title, #schedule .title {
+    font-size: 1.3em;
 }
 
+#writing .past .title, #schedule .past .title {
+    font-size: 1em;
+    color: #868686;
+}
 
-.link-info .username {
+.link-info .username, #projects .description, #writing .date, #schedule .date {
     padding-left: 2px;
     color: #868686;
-    font-size: .6em;
+    font-size: .7em;
 }
 
 @media screen and (max-width: 992px) {
@@ -278,4 +265,5 @@ li {
 /* 
 * light blue: #b5ebf2;
 * dark blue: #64b0ff;
+* pink: #FFCCC5;
 */
