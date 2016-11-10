@@ -22,7 +22,7 @@
 
 html, body {
     height: 100%;
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'PressStart2P', serif;
     color: #565656;
     background-color: #FFCCC5;
@@ -33,7 +33,7 @@ html, body {
 }
 
 #content {
-    width: 960px;
+    width: 992px;
     margin: 10px auto 0px;
     overflow: auto;
     padding-bottom: 65px;
@@ -132,6 +132,7 @@ li {
     list-style: none;
     margin-top: 5px;
     padding-left: 15px;
+    padding-right: 15px;
 }
 
 .side-nav {
@@ -175,8 +176,8 @@ li {
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     display: inline-block;
 }
 
@@ -187,6 +188,15 @@ li {
 
 #links li {
     position: relative;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #64b0ff;
+}
+
+#links li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
 .link-info {
@@ -208,9 +218,39 @@ li {
     font-size: .6em;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 992px) {
+
+    html, body {
+        font-size: 9px;
+    }
+
+    #content {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
     #content {
         width: 100%;
+    }
+
+    #headshot img {
+        width: 110px;
+        max-height: 100%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    
+    #headshot {
+        text-align: center;
+    }
+
+    #headshot img {
+        width: 100%;
+        margin-bottom: 5px;
+        float: none;
     }
 }
 
