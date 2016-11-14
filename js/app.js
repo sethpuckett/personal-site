@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var SPREADSHEET_KEY = '0AmYzu_s7QHsmdDNZUzRlYldnWTZCLXdrMXlYQzVxSFE';
+  var SPREADSHEET_KEY = '1LPsEpOMl2bfK_leLCJRL5LEXnutoOoTv1mMiln7IytE';
 
   Tabletop.init({ 
     key: SPREADSHEET_KEY,
@@ -21,17 +21,71 @@ $(document).ready(function() {
 });
 
 function loadSpreadsheetData(data, tabletop) {
-
+  populateSchedule(data.schedule);
+  populateWriting(data.writing);
+  populateProjects(data.projects);
+  populatephotos(data.photos);
 }
 
-function populateSchedule(scheduleData) {
+function populateSchedule(schedule) {
   $("#schedule-loader").hide();
+  var list = $("#schedule ul");
+
+  for (var i = schedule.elements.length - 1; i >= 0; i--) {
+    var title = schedule.elements[i].title;
+    var date = schedule.elements[i].date;
+    var venue = schedule.elements[i].venue;
+    var link = schedule.elements[i].link;
+
+    var li = "<li><a href='"+link+"'><div class='title'>"+title+"</div><div class='info'>"+venue+", "+date+"</div></a></li>";
+
+    list.append(li);
+  }
 }
 
-function populateWriting(writingData) {
+function populateWriting(writing) {
   $("#writing-loader").hide();
+  var list = $("#writing ul");
+
+  for (var i = writing.elements.length - 1; i >= 0; i--) {
+    var title = writing.elements[i].title;
+    var date = writing.elements[i].date;
+    var link = writing.elements[i].link;
+
+    var li = "<li><a href='"+link+"'><div class='title'>"+title+"</div><div class='date'>"+date+"</div></a></li>";
+
+    list.append(li);
+  }
 }
 
-function populateProjects(projectsData) {
+function populateProjects(projects) {
   $("#projects-loader").hide();
+  var list = $("#projects ul");
+
+  for (var i = projects.elements.length - 1; i >= 0; i--) {
+    var title = projects.elements[i].title;
+    var description = projects.elements[i].description;
+    var link = projects.elements[i].link;
+
+    var li = "<li><a href='"+link+"'><div class='title'>"+title+"</div><div class='description'>"+description+"</div></a></li>";
+
+    list.append(li);
+  }
 }
+
+function populatephotos(photos) {
+  $("#photos-loader").hide();
+  var list = $("#photos .row-fluid");
+
+  for (var i = photos.elements.length - 1; i >= 0; i--) {
+    var url = photos.elements[i].url;
+    var alt = photos.elements[i].alt;
+
+    var img = "<div class='col-sm-4 col'><div class='box'><a href='"+url+"' data-lightbox='image-"+i+"' data-title='"+alt+"'><img src='"+url+"' alt='"+alt+"'></a></div></div>";
+
+    list.append(img);
+  }
+}
+
+
+

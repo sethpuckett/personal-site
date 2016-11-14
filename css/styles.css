@@ -59,26 +59,59 @@
 ul {
     list-style: none;
     margin-top: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 li {
     padding-top: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #54a0ef;
+}
+
+#nav a:hover::before, #links a:hover::before, #work a:hover::before {
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 3px;
+    background-image: url('../img/white-arrow.png');
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    content:"";
+}
+
+#links a:hover::before {
+    margin-top: 15px;
+}
+
+#work a:hover::before {
+    margin-top: -2px;
 }
 
 .link-info .service, #projects .title, #writing .title, #schedule .title {
     font-size: 1.3em;
 }
 
-.link-info .username, #projects .description, #writing .date, #schedule .date, #schedule .past .title {
+.link-info .username, #projects .description, #writing .date, #schedule .info, #schedule .past .title {
     padding-left: 2px;
     color: #868686;
     font-size: .8em;
 }
 
+#projects h1, #writing h1, #schedule h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+#photos img {
+    width: 100%;
+}
 
 
 /************************
@@ -155,6 +188,18 @@ footer {
     content:"";
 }
 
+#nav li.active::after {
+    position: absolute;
+    margin-right: 25px;
+    margin-top: 3px;
+    background-image: url('../img/white-arrow-left.png');
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    content:"";
+}
+
 #nav a {
     font-size: 1.75em;
     text-decoration: none;
@@ -167,6 +212,7 @@ footer {
 
 #nav-content .nav-pane {
     display: none;
+    width: 100%;
 }
 
 #nav-content .active {
@@ -288,9 +334,6 @@ footer {
         width: 125px;
         max-height: 100%;
     }
-}
-
-@media screen and (max-width: 480px) {
 
     #nav-wrapper {
         text-align: center;

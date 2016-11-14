@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Proza+Libre:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/lightbox/css/lightbox.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -24,8 +25,8 @@
                     <div class="col-sm-2 col" id="nav-wrapper">
                         <ul id="nav">
                             <li class="active"><a href="#main">Main</a></li>
-                            <li><a href="#stuff">Works</a></li>
-                            <li><a href="#pics">CV</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#photos">Photos</a></li>
                         </ul>
                     </div>
 
@@ -151,85 +152,40 @@
                             </div>
 
                         </div>
-                        <div id="stuff" class="nav-pane">
-                            <div class="col-sm-7 col">
+                        <div id="work" class="nav-pane">
+                            <div class="col-sm-6 col">
                                 <div id="projects" class="box">
+                                    <h1>Projects</h1>
                                     <div class="loader" id="projects-loader">
                                         <img src="img/loader.svg">
                                     </div>
-                                    <ul>
-                                        <li>
-                                            <div class="title">Game of Thrones Death Pool</div>
-                                            <div class="description">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laboriosam totam.
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="title">Game of Life</div>
-                                            <div class="description">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laboriosam totam.
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="title">LobLib</div>
-                                            <div class="description">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laboriosam totam.
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <ul></ul>
                                 </div>
                             </div>
-                            <div class="col-sm-5 col">
-                                <div id="writing" class="box">
-                                    <div class="loader" id="writing-loader">
-                                        <img src="img/loader.svg">
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <div class="title">Post 1</div>
-                                            <div class="date">11/9/2016</div>
-                                        </li>
-                                        <li>
-                                            <div class="title">Post 2</div>
-                                            <div class="date">10/15/2016</div>
-                                        </li>
-                                        <li>
-                                            <div class="title">Post 3</div>
-                                            <div class="date">7/2/2016</div>
-                                        </li>
-                                        <li>
-                                            <div class="title">Post 3</div>
-                                            <div class="date">4/22/2016</div>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="col-sm-6 col">
                                 <div id="schedule" class="box">
+                                    <h1>Schedule</h1>
                                     <div class="loader" id="schedule-loader">
                                         <img src="img/loader.svg">
                                     </div>
-                                    <ul>
-                                        <li>
-                                            <div class="title">Workshop 1</div>
-                                            <div class="date">11/9/2016</div>
-                                        </li>
-                                        <li>
-                                            <div class="title">Lecture 2</div>
-                                            <div class="date">10/15/2016</div>
-                                        </li>
-                                        <li class="past">
-                                            <div class="title">Panel 3</div>
-                                            <div class="date">7/2/2016</div>
-                                        </li>
-                                        <li class="past">
-                                            <div class="title">Conference 4</div>
-                                            <div class="date">4/22/2016</div>
-                                        </li>
-                                    </ul>
+                                    <ul></ul>
+                                </div>
+                                <div id="writing" class="box">
+                                    <h1>Writing</h1>
+                                    <div class="loader" id="writing-loader">
+                                        <img src="img/loader.svg">
+                                    </div>
+                                    <ul></ul>
                                 </div>
                             </div>
                         </div>
-                        <div id="pics" class="nav-pane">
-                            b
+                        <div id="photos" class="nav-pane">
+                            <div class="loader" id="photos-loader">
+                                <img src="img/loader.svg">
+                            </div>
+                            <div class="row-fluid">
+
+                            </div>
                         </div>
                     </div>
 
@@ -246,6 +202,7 @@
       crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="plugins/tabletop-1.4.2/src/tabletop.js"></script>
+    <script src="plugins/lightbox/js/lightbox.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
