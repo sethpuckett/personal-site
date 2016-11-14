@@ -21,10 +21,24 @@ $(document).ready(function() {
 });
 
 function loadSpreadsheetData(data, tabletop) {
+  populateGeneral(data.general);
   populateSchedule(data.schedule);
   populateWriting(data.writing);
   populateProjects(data.projects);
   populatephotos(data.photos);
+}
+
+function populateGeneral(general) {
+  for (var i = general.elements.length - 1; i >= 0; i--) {
+    var field = general.elements[i].field;
+    var value = general.elements[i].value;
+
+    if (field === "location") {
+      $("#location-text").text(value);
+    } else if (field === "map-url") {
+      $("#location-map").html(value);
+    }
+  }  
 }
 
 function populateSchedule(schedule) {
