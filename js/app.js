@@ -7,18 +7,36 @@ $(document).ready(function() {
     callback: loadSpreadsheetData
   });
 
-  $("#nav a").click(function(event) {
-    event.preventDefault();
-    var id = $(this).attr("href");
+  $("#nav a").on("click", updateTab);
 
-    $("#nav li").removeClass("active");
-    $(this).parent().addClass("active");
-
-    $("#nav-content .nav-pane").removeClass("active");
-    $(id).addClass("active");
-  });
+  $(window).on("load resize scroll", updateThemeChangePosition);
 
 });
+
+function updateTab(event) {
+  event.preventDefault();
+  var id = $(this).attr("href");
+
+  $("#nav li").removeClass("active");
+  $(this).parent().addClass("active");
+
+  $("#nav-content .nav-pane").removeClass("active");
+  $(id).addClass("active");
+}
+
+function updateThemeChangePosition() {
+  var windowBottom = $(window).scrollTop() + $(window).height();
+  var pageHeight = $("#wrapper").height();
+
+  var diff = pageHeight - windowBottom;
+
+  if(diff < 65) {
+      $("#theme-change").css("bottom", 85 - diff);
+
+  } else {
+      $("#theme-change").css("bottom", 20);
+  }
+}
 
 function loadSpreadsheetData(data, tabletop) {
   populateGeneral(data.general);
@@ -38,6 +56,8 @@ function populateGeneral(general) {
     } else if (field === "map-url") {
       $("#location-map").html(value);
     }
+
+    updateThemeChangePosition();
   }  
 }
 
@@ -99,6 +119,27 @@ function populatephotos(photos) {
 
     list.append(img);
   }
+}
+
+function changeTheme() {
+  /*
+    header
+    footer
+    border
+    social media icons
+    arrow
+    arrow left
+    background color
+    text color
+    header color
+    description color
+    link color
+    link:hover color
+  */
+}
+
+function setBionicTheme() {
+  $("#header").css("background", "url('../img/bioinic/blue-green-sky.png') repeat center center");
 }
 
 

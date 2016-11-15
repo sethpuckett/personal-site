@@ -42,7 +42,7 @@
     margin-bottom: 15px;
     padding: 5px;
     border: 20px solid black;
-    border-image: url("../img/blue-border.png");
+    border-image: url("../img/mega/blue-border.png");
     border-image-slice: 30 36 36 30;
     border-image-repeat: repeat;
 }
@@ -77,7 +77,7 @@ a:hover {
     position: absolute;
     margin-left: -25px;
     margin-top: 3px;
-    background-image: url('../img/white-arrow.png');
+    background-image: url('../img/mega/white-arrow.png');
     background-size: 20px 20px;
     display: inline-block;
     width: 20px; 
@@ -126,7 +126,7 @@ html, body {
     background-color: #FFCCC5;
 }
 
-.wrapper {
+#wrapper {
     min-height: 100%;
 }
 
@@ -137,9 +137,14 @@ html, body {
     padding-bottom: 65px;
 }
 
-
-
-
+#theme-change {
+    color: #868686;
+    font-size: .8em;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
 
 /************************
 * Header/Footer
@@ -147,7 +152,7 @@ html, body {
 
 header {
     height: 60px;
-    background: url("../img/blue-pink-sky.png") repeat center center;
+    background: url("../img/mega/blue-pink-sky.png") repeat center center;
     background-size: 300px 60px;
 }
 
@@ -157,7 +162,7 @@ footer {
     height: 75px;
     padding-top: 21px;
     margin-top: -75px; /* negative value of footer height */
-    background: url("../img/street.png") repeat center center;
+    background: url("../img/mega/street.png") repeat center center;
     background-size: 235px 75px;
     clear: both;
 }
@@ -180,7 +185,7 @@ footer {
     position: absolute;
     margin-left: -25px;
     margin-top: 3px;
-    background-image: url('../img/white-arrow.png');
+    background-image: url('../img/mega/white-arrow.png');
     background-size: 20px 20px;
     display: inline-block;
     width: 20px; 
@@ -192,7 +197,7 @@ footer {
     position: absolute;
     margin-right: 25px;
     margin-top: 3px;
-    background-image: url('../img/white-arrow-left.png');
+    background-image: url('../img/mega/white-arrow-left.png');
     background-size: 20px 20px;
     display: inline-block;
     width: 20px; 
@@ -344,6 +349,14 @@ footer {
         margin-left: 5%;
         margin-right: 5%;
     }
+
+    #theme-change {
+        font-size: 1em;
+        position: static;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -363,4 +376,10 @@ footer {
 * light blue: #b5ebf2;
 * dark blue: #64b0ff;
 * pink: #FFCCC5;
+*/
+
+/*
+* bionic sky: #64b0ff;
+*
+*
 */
