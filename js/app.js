@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  var themeIndex = 0;
 
   var SPREADSHEET_KEY = '1LPsEpOMl2bfK_leLCJRL5LEXnutoOoTv1mMiln7IytE';
 
@@ -8,6 +9,11 @@ $(document).ready(function() {
   });
 
   $("#nav a").on("click", updateTab);
+
+  $("#theme-change").on("click", function() {
+    themeIndex++;
+    setTheme(themeIndex);
+  });
 
   $(window).on("load resize scroll", updateThemeChangePosition);
 
@@ -121,7 +127,16 @@ function populatephotos(photos) {
   }
 }
 
-function changeTheme() {
+function setTheme(themeIndex) {
+
+  switch (themeIndex % 2) {
+    case 0:
+      setMegaTheme();
+      break;
+    case 1:
+      setBionicTheme();
+      break;
+  }
   /*
     header
     footer
@@ -138,8 +153,20 @@ function changeTheme() {
   */
 }
 
+function setMegaTheme() {
+  $("header").css("background", "url('img/mega/blue-pink-sky.png') center center / 300px 60px repeat");
+  $("html, body").css("background-color", "#FFCCC5");
+  $("footer").css("background", "url('img/mega/street.png') repeat center center / 235px 75px");
+  $("footer").css("padding-top", "21px");
+}
+
 function setBionicTheme() {
-  $("#header").css("background", "url('../img/bioinic/blue-green-sky.png') repeat center center");
+  $("header").css("background", "url('img/bionic/blue-green-sky.png') center center / 300px 60px repeat");
+  $("html, body").css("background-color", "#64b0ff");
+  $("footer").css("background", "url('img/bionic/bionic-footer.png') repeat center center / 235px 75px");
+  $("footer").css("padding-top", "37px");
+
+
 }
 
 
