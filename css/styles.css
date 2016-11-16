@@ -68,6 +68,10 @@ li {
     margin-bottom: 15px;
 }
 
+a {
+    color: #337ab7;
+}
+
 a:hover {
     text-decoration: none;
     color: #54a0ef;
@@ -124,6 +128,7 @@ html, body {
     font-family: 'PressStart2P', serif;
     color: #565656;
     background-color: #FFCCC5;
+    image-rendering: pixelated;
 }
 
 #wrapper {
@@ -165,6 +170,7 @@ footer {
     background: url("../img/mega/street.png") repeat center center;
     background-size: 235px 75px;
     clear: both;
+    image-rendering: pixelated;
 }
 
 
