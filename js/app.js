@@ -28,6 +28,8 @@ function updateTab(event) {
 
   $("#nav-content .nav-pane").removeClass("active");
   $(id).addClass("active");
+
+  updateThemeChangePosition();
 }
 
 function updateThemeChangePosition() {
