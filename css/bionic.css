@@ -1,0 +1,98 @@
+header.bionic {
+  background: url('../img/bionic/bionic-sky.png') center center / 300px 60px repeat;
+}
+
+html.bionic, body.bionic {
+  color: #444;
+  background-color: #64b0ff;
+}
+
+footer.bionic {
+  background: url('../img/bionic/bionic-footer.png') repeat center center / 235px 75px;
+  padding-top: 40px;
+}
+
+.box.bionic {
+  border-image: url('../img/bionic/bionic-border.png');
+  border-image-slice: 50 50 50 50;
+  border-image-repeat: repeat;
+}  
+
+#theme-change.bionic {
+  color: #666;
+}
+
+#location-description.bionic {
+  color: #666;
+}
+
+a.bionic {
+  color: #135a97;
+}
+
+.link-info.bionic .username.bionic, 
+#projects.bionic .description.bionic, 
+#writing.bionic .date.bionic, 
+#schedule.bionic .info.bionic, 
+#schedule.bionic .past.bionic .title.bionic {
+  color: #666;
+}
+
+#nav.bionic li.active.bionic::before {
+    background-image: url('../img/bionic/bionic-arrow.png');
+}
+
+#nav.bionic li.active.bionic::after {
+    background-image: url('../img/bionic/bionic-arrow-left.png');
+}
+
+#nav.bionic a.bionic, #nav.bionic a.bionic:visited {
+    color: #b71e7b;
+}
+
+#nav.bionic a.bionic:hover::before, #links.bionic a.bionic:hover::before, #work.bionic a.bionic:hover::before {
+    background-image: url('../img/bionic/bionic-arrow.png');
+}
+
+#twitter-image.bionic {
+  content:url('../img/bionic/twitter.png');
+}
+
+/*
+purple: #6e0040;
+magenta: #b71e7b;
+orange: #ea9e22;
+*/
+
+
+/*
+    header
+    body background color
+    footer
+    border
+    body color
+    #theme-changer color
+    #location-description color
+    !!! a:hover color
+    .link-info .username, #projects .description, #writing .date, #schedule .info, #schedule .past .title 
+      color
+    arrow
+    arrow left
+    nav a color
+
+    social media icons
+    text color
+    header color
+    description color
+    link color
+    link:hover color
+  */
+
+
+
+
+
+
+
+
+

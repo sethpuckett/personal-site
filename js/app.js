@@ -137,56 +137,16 @@ function setTheme(themeIndex) {
       setBionicTheme();
       break;
   }
-  /*
-    header
-    body background color
-    footer
-    border
-    body color
-    #theme-changer color
-    #location-description color
-    !!! a:hover color
-    .link-info .username, #projects .description, #writing .date, #schedule .info, #schedule .past .title 
-      color
-    social media icons
-    arrow
-    arrow left
-    text color
-    header color
-    description color
-    link color
-    link:hover color
-  */
 }
 
 function setMegaTheme() {
-  $("header").css("background", "url('img/mega/blue-pink-sky.png') center center / 300px 60px repeat");
-  $("html, body").css("background-color", "#FFCCC5");
-  $("footer").css("background", "url('img/mega/street.png') repeat center center / 235px 75px");
-  $("footer").css("padding-top", "21px");
-  $(".box").css("border-image", "url('img/mega/blue-border.png')");
-  $(".box").css("border-image-slice", "30 36 36 30");
-  $(".box").css("border-image-repeat", "repeat");
-  $("html, body").css("color", "#565656");
-  $("#theme-changer").css("color", "#868686");
-  $("#location-description").css("color", "#868686");
-  $("a").css("color", "#337ab7");
-  $(".link-info .username, #projects .description, #writing .date, #schedule .info, #schedule .past .title").css("color", "#868686");
+  $("*").removeClass("bionic");
+  $("*").addClass("mega");
 }
 
 function setBionicTheme() {
-  $("header").css("background", "url('img/bionic/blue-green-sky.png') center center / 300px 60px repeat");
-  $("html, body").css("background-color", "#64b0ff");
-  $("footer").css("background", "url('img/bionic/bionic-footer.png') repeat center center / 235px 75px");
-  $("footer").css("padding-top", "40px");
-  $(".box").css("border-image", "url('img/bionic/bionic-border.png')");
-  $(".box").css("border-image-slice", "80 80 80 80");
-  $(".box").css("border-image-repeat", "repeat");
-  $("html, body").css("color", "#444");
-  $("#theme-changer").css("color", "#666");
-  $("#location-description").css("color", "#666");
-  $("a").css("color", "#135a97");
-  $(".link-info .username, #projects .description, #writing .date, #schedule .info, #schedule .past .title").css("color", "#666");
+  $("*").removeClass("mega");
+  $("*").addClass("bionic");
 }
 
 

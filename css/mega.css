@@ -1,0 +1,62 @@
+header.mega {
+  background: url('../img/mega/blue-pink-sky.png') center center / 300px 60px repeat;
+}
+
+html.mega, body.mega {
+  color: #565656;
+  background-color: #FFCCC5;
+}
+
+footer.mega {
+  background: url('../img/mega/street.png') repeat center center / 235px 75px;
+  padding-top: 21px;
+}
+
+.box.mega {
+  border-image: url('../img/mega/blue-border.png');
+  border-image-slice: 30 36 36 30;
+  border-image-repeat: repeat;
+}  
+
+#theme-change.mega {
+  color: #868686;
+}
+
+#location-description.mega {
+  color: #868686;
+}
+
+a.mega {
+  color: #337ab7;
+}
+
+.link-info.mega .username.mega, 
+#projects.mega .description.mega, 
+#writing.mega .date.mega, 
+#schedule.mega .info.mega, 
+#schedule.mega .past.mega .title.mega {
+  color: #868686;
+}
+
+#nav.mega li.active.mega::before {
+    background-image: url('../img/mega/white-arrow.png');
+}
+
+#nav.mega li.active.mega::after {
+    background-image: url('../img/mega/white-arrow-left.png');
+}
+
+#nav.mega a.mega, #nav.mega a.mega:visited {
+    color: #FFF;
+}
+
+#nav.mega a.mega:hover::before, #links.mega a.mega:hover::before, #work.mega a.mega:hover::before {
+    background-image: url('../img/mega/white-arrow.png');
+}
+
+#twitter-image.mega {
+  content:url('../img/mega/twitter.png');
+}
+
+
+

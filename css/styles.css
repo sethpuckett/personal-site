@@ -211,13 +211,9 @@ footer {
     content:"";
 }
 
-#nav a {
+#nav a, #nav a:visited  {
     font-size: 1.75em;
     text-decoration: none;
-    color: #FFF;
-}
-
-#nav a:visited {
     color: #FFF;
 }
 
