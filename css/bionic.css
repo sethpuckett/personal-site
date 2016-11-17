@@ -1,5 +1,5 @@
 header.bionic {
-  background: url('../img/bionic/bionic-sky.png') center center / 300px 60px repeat;
+  background: url('../img/bionic/header.png') center center / 300px 60px repeat;
 }
 
 html.bionic, body.bionic {
@@ -8,15 +8,15 @@ html.bionic, body.bionic {
 }
 
 footer.bionic {
-  background: url('../img/bionic/bionic-footer.png') repeat center center / 235px 75px;
+  background: url('../img/bionic/footer.png') repeat center center / 235px 75px;
   padding-top: 40px;
 }
 
 .box.bionic {
-  border-image: url('../img/bionic/bionic-border.png');
+  border-image: url('../img/bionic/border.png');
   border-image-slice: 50 50 50 50;
   border-image-repeat: repeat;
-}  
+} 
 
 #theme-change.bionic {
   color: #666;
@@ -39,11 +39,11 @@ a.bionic {
 }
 
 #nav.bionic li.active.bionic::before {
-    background-image: url('../img/bionic/bionic-arrow.png');
+    background-image: url('../img/bionic/arrow-right.png');
 }
 
 #nav.bionic li.active.bionic::after {
-    background-image: url('../img/bionic/bionic-arrow-left.png');
+    background-image: url('../img/bionic/arrow-left.png');
 }
 
 #nav.bionic a.bionic, #nav.bionic a.bionic:visited {
@@ -51,7 +51,7 @@ a.bionic {
 }
 
 #nav.bionic a.bionic:hover::before, #links.bionic a.bionic:hover::before, #work.bionic a.bionic:hover::before {
-    background-image: url('../img/bionic/bionic-arrow.png');
+    background-image: url('../img/bionic/arrow-right.png');
 }
 
 #twitter-image.bionic {

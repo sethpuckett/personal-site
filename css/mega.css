@@ -1,5 +1,5 @@
 header.mega {
-  background: url('../img/mega/blue-pink-sky.png') center center / 300px 60px repeat;
+  background: url('../img/mega/header.png') center center / 300px 60px repeat;
 }
 
 html.mega, body.mega {
@@ -8,12 +8,12 @@ html.mega, body.mega {
 }
 
 footer.mega {
-  background: url('../img/mega/street.png') repeat center center / 235px 75px;
+  background: url('../img/mega/footer.png') repeat center center / 235px 75px;
   padding-top: 21px;
 }
 
 .box.mega {
-  border-image: url('../img/mega/blue-border.png');
+  border-image: url('../img/mega/border.png');
   border-image-slice: 30 36 36 30;
   border-image-repeat: repeat;
 }  
@@ -39,11 +39,11 @@ a.mega {
 }
 
 #nav.mega li.active.mega::before {
-    background-image: url('../img/mega/white-arrow.png');
+    background-image: url('../img/mega/arrow-right.png');
 }
 
 #nav.mega li.active.mega::after {
-    background-image: url('../img/mega/white-arrow-left.png');
+    background-image: url('../img/mega/arrow-left.png');
 }
 
 #nav.mega a.mega, #nav.mega a.mega:visited {
@@ -51,7 +51,7 @@ a.mega {
 }
 
 #nav.mega a.mega:hover::before, #links.mega a.mega:hover::before, #work.mega a.mega:hover::before {
-    background-image: url('../img/mega/white-arrow.png');
+    background-image: url('../img/mega/arrow-right.png');
 }
 
 #twitter-image.mega {

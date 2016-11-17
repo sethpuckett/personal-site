@@ -42,7 +42,7 @@
     margin-bottom: 15px;
     padding: 5px;
     border: 20px solid black;
-    border-image: url("../img/mega/blue-border.png");
+    border-image: url("../img/mega/border.png");
     border-image-slice: 30 36 36 30;
     border-image-repeat: repeat;
 }
@@ -81,7 +81,7 @@ a:hover {
     position: absolute;
     margin-left: -25px;
     margin-top: 3px;
-    background-image: url('../img/mega/white-arrow.png');
+    background-image: url('../img/mega/arrow-right.png');
     background-size: 20px 20px;
     display: inline-block;
     width: 20px; 
@@ -157,7 +157,7 @@ html, body {
 
 header {
     height: 60px;
-    background: url("../img/mega/blue-pink-sky.png") repeat center center;
+    background: url("../img/mega/header.png") repeat center center;
     background-size: 300px 60px;
 }
 
@@ -167,10 +167,9 @@ footer {
     height: 75px;
     padding-top: 21px;
     margin-top: -75px; /* negative value of footer height */
-    background: url("../img/mega/street.png") repeat center center;
+    background: url("../img/mega/footer.png") repeat center center;
     background-size: 235px 75px;
     clear: both;
-    image-rendering: pixelated;
 }
 
 
@@ -191,7 +190,7 @@ footer {
     position: absolute;
     margin-left: -25px;
     margin-top: 3px;
-    background-image: url('../img/mega/white-arrow.png');
+    background-image: url('../img/mega/arrow-right.png');
     background-size: 20px 20px;
     display: inline-block;
     width: 20px; 
@@ -203,7 +202,7 @@ footer {
     position: absolute;
     margin-right: 25px;
     margin-top: 3px;
-    background-image: url('../img/mega/white-arrow-left.png');
+    background-image: url('../img/mega/arrow-left.png');
     background-size: 20px 20px;
     display: inline-block;
     width: 20px; 
@@ -288,7 +287,6 @@ footer {
 
 #links .logo img {
     width: 100%;
-    image-rendering: pixelated;
 }
 
 #links li {
