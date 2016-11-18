@@ -1,4 +1,4 @@
-header.bionic {
+.bionic header {
   background: url('../img/bionic/header.png') center center / 300px 60px repeat;
 }
 
@@ -7,90 +7,97 @@ html.bionic, body.bionic {
   background-color: #64b0ff;
 }
 
-footer.bionic {
+.bionic footer {
   background: url('../img/bionic/footer.png') repeat center center / 235px 75px;
   padding-top: 41px;
 }
 
-.box.bionic {
+.bionic .box {
   border-image: url('../img/bionic/border.png');
   border-image-slice: 50 50 50 50;
   border-image-repeat: repeat;
 } 
 
-#theme-change.bionic {
+.bionic #theme-change {
   color: #666;
 }
 
-#location-description.bionic {
+.bionic #location-description {
   color: #666;
 }
 
-a.bionic, a.bionic:hover, a.bionic:hover, a.bionic:active, a.bionic:visited {
+.bionic a, 
+.bionic a:hover, 
+.bionic a:hover, 
+.bionic a:active, 
+.bionic a:visited {
     color: #135a97;
 }
 
-.link-info.bionic .username.bionic, 
-#projects.bionic .description.bionic, 
-#writing.bionic .date.bionic, 
-#schedule.bionic .info.bionic, 
-#schedule.bionic .past.bionic .title.bionic {
+.bionic .link-info .username, 
+.bionic #projects .description, 
+.bionic #writing .date, 
+.bionic #schedule .info, 
+.bionic #schedule .past .title {
   color: #666;
 }
 
-#nav.bionic li.active.bionic::before {
+.bionic #nav li.active::before {
     background-image: url('../img/bionic/arrow-right.png');
 }
 
-#nav.bionic li.active.bionic::after {
+.bionic #nav li.active::after {
     background-image: url('../img/bionic/arrow-left.png');
 }
 
-#nav.bionic a.bionic, #nav.bionic a.bionic:visited {
+.bionic #nav a, 
+.bionic #nav a:visited {
     color: #e4e594;
 }
 
-#nav.bionic a.bionic:hover::before, #links.bionic a.bionic:hover::before, #work.bionic a.bionic:hover::before {
+.bionic #nav a:hover::before, 
+.bionic #links a:hover::before, #work 
+.bionic a:hover::before {
     background-image: url('../img/bionic/arrow-right.png');
 }
 
-#links.bionic li.bionic {
+.bionic #links li {
     border-bottom: 2px solid #fff;
 }
 
-#links.bionic li.bionic:last-child {
+.bionic #links li:last-child {
     border-bottom: none;
 }
 
-#twitter-image.bionic {
+.bionic #twitter-image {
   content:url('../img/bionic/twitter.png');
 }
 
-#github-image.bionic {
+.bionic #github-image {
   content:url('../img/bionic/github.png');
 }
 
-#stackoverflow-image.bionic {
+.bionic #stackoverflow-image {
   content:url('../img/bionic/stackoverflow.png');
 }
 
-#codepen-image.bionic {
+.bionic #codepen-image {
   content:url('../img/bionic/codepen.png');
 }
 
-#linkedin-image.bionic {
+.bionic #linkedin-image {
   content:url('../img/bionic/linkedin.png');
 }
 
-#steam-image.bionic {
+.bionic #steam-image {
   content:url('../img/bionic/steam.png');
 }
 
-#facebook-image.bionic {
+.bionic #facebook-image {
   content:url('../img/bionic/facebook.png');
 }
 
-#mail-image.bionic {
+.bionic #mail-image {
   content:url('../img/bionic/mail.png');
 }
 

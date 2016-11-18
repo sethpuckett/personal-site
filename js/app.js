@@ -130,37 +130,24 @@ function populatephotos(photos) {
 }
 
 function setTheme(themeIndex) {
+  removeAllThemes();
 
   switch (themeIndex % 3) {
     case 0:
-      setMegaTheme();
+      $("html, body").addClass("mega");
       break;
     case 1:
-      setBionicTheme();
+      $("html, body").addClass("bionic");
       break;
     case 2:
-      setPacTheme();
+      $("html, body").addClass("pac");
       break;
   }
 }
 
-function setMegaTheme() {
-  $("*").removeClass("bionic");
-  $("*").removeClass("pac");
-  $("*").addClass("mega");
+function removeAllThemes() {
+  $("html").removeClass();
+  $("body").removeClass();
 }
-
-function setBionicTheme() {
-  $("*").removeClass("mega");
-  $("*").removeClass("pac");
-  $("*").addClass("bionic");
-}
-
-function setPacTheme() {
-  $("*").removeClass("mega");
-  $("*").removeClass("bionic");
-  $("*").addClass("pac");
-}
-
 
 

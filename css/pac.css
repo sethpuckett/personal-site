@@ -1,4 +1,4 @@
-header.pac {
+.pac header {
   background: url('../img/pac/header.png') center center / 155px 75px repeat;
 }
 
@@ -7,90 +7,97 @@ html.pac, body.pac {
   background-color: #000;
 }
 
-footer.pac {
+.pac footer {
   background: url('../img/pac/footer.png') repeat center center / 158px 75px;
   padding-top: 42px;
 }
 
-.box.pac {
+.pac .box {
   border-image: url('../img/pac/border.png');
   border-image-slice: 30 30 30 30;
   border-image-repeat: repeat;
 } 
 
-#theme-change.pac {
+.pac #theme-change {
   color: #b53120;
 }
 
-#location-description.pac {
+.pac #location-description {
   color: #fff;
 }
 
-a.pac, a.pac:hover, a.pac:hover, a.pac:active, a.pac:visited {
+.pac a, 
+.pac a:hover, 
+.pac a:hover, 
+.pac a:active, 
+.pac a:visited {
     color: #b53120;
 }
 
-.link-info.pac .username.pac, 
-#projects.pac .description.pac, 
-#writing.pac .date.pac, 
-#schedule.pac .info.pac, 
-#schedule.pac .past.pac .title.pac {
+.pac .link-info .username, 
+.pac #projects .description, 
+.pac #writing .date, 
+.pac #schedule .info, 
+.pac #schedule .past .title {
   color: #fff;
 }
 
-#nav.pac li.active.pac::before {
+.pac #nav li.active::before {
     background-image: url('../img/pac/arrow-right.png');
 }
 
-#nav.pac li.active.pac::after {
+.pac #nav li.active::after {
     background-image: url('../img/pac/arrow-left.png');
 }
 
-#nav.pac a.pac, #nav.pac a.pac:visited {
+.pac #nav a, 
+.pac #nav a:visited {
     color: #b53120;
 }
 
-#nav.pac a.pac:hover::before, #links.pac a.pac:hover::before, #work.pac a.pac:hover::before {
+.pac #nav a:hover::before, 
+.pac #links a:hover::before, 
+.pac #work a:hover::before {
     background-image: url('../img/pac/arrow-right.png');
 }
 
-#links.pac li.pac {
+.pac #links li {
     border-bottom: 2px solid #155fd9;
 }
 
-#links.pac li.pac:last-child {
+.pac #links li:last-child {
     border-bottom: none;
 }
 
-#twitter-image.pac {
+.pac #twitter-image {
   content:url('../img/pac/twitter.png');
 }
 
-#github-image.pac {
+.pac #github-image {
   content:url('../img/pac/github.png');
 }
 
-#stackoverflow-image.pac {
+.pac #stackoverflow-image {
   content:url('../img/pac/stackoverflow.png');
 }
 
-#codepen-image.pac {
+.pac #codepen-image {
   content:url('../img/pac/codepen.png');
 }
 
-#linkedin-image.pac {
+.pac #linkedin-image {
   content:url('../img/pac/linkedin.png');
 }
 
-#steam-image.pac {
+.pac #steam-image {
   content:url('../img/pac/steam.png');
 }
 
-#facebook-image.pac {
+.pac #facebook-image {
   content:url('../img/pac/facebook.png');
 }
 
-#mail-image.pac {
+.pac #mail-image {
   content:url('../img/pac/mail.png');
 }
 

@@ -120,11 +120,10 @@ a, a:hover, a:hover, a:active, a:visited {
 
 html, body {
     height: 100%;
-    font-size: 11px;
+    font-size: 10px;
     font-family: 'PressStart2P', serif;
-    color: #565656;
+    color: #505050;
     background-color: #FFCCC5;
-    image-rendering: pixelated;
 }
 
 #wrapper {
@@ -262,7 +261,7 @@ footer {
 
 #location-description {
     color: #868686;
-    font-size: .6em;
+    font-size: .8em;
     margin-top: 10px;
     margin-bottom: 5px;
 }

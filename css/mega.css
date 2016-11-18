@@ -1,96 +1,103 @@
-header.mega {
+.mega header {
   background: url('../img/mega/header.png') center center / 300px 60px repeat;
 }
 
 html.mega, body.mega {
-  color: #565656;
+  color: #505050;
   background-color: #FFCCC5;
 }
 
-footer.mega {
+.mega footer {
   background: url('../img/mega/footer.png') repeat center center / 235px 75px;
   padding-top: 21px;
 }
 
-.box.mega {
+.mega .box {
   border-image: url('../img/mega/border.png');
   border-image-slice: 30 36 36 30;
   border-image-repeat: repeat;
 }  
 
-#theme-change.mega {
+.mega #theme-change {
   color: #868686;
 }
 
-#location-description.mega {
+.mega #location-description {
   color: #868686;
 }
 
-a.mega, a.mega:hover, a.mega:hover, a.mega:active, a.mega:visited {
+.mega a, 
+.mega a:hover, 
+.mega a:hover, 
+.mega a:active, 
+.mega a:visited {
     color: #337ab7;
 }
 
-.link-info.mega .username.mega, 
-#projects.mega .description.mega, 
-#writing.mega .date.mega, 
-#schedule.mega .info.mega, 
-#schedule.mega .past.mega .title.mega {
+.mega .link-info .username, 
+.mega #projects .description, 
+.mega #writing .date, 
+.mega #schedule .info, 
+.mega #schedule .past .title {
   color: #868686;
 }
 
-#nav.mega li.active.mega::before {
+.mega #nav li.active::before {
     background-image: url('../img/mega/arrow-right.png');
 }
 
-#nav.mega li.active.mega::after {
+.mega #nav li.active::after {
     background-image: url('../img/mega/arrow-left.png');
 }
 
-#nav.mega a.mega, #nav.mega a.mega:visited {
+.mega #nav a, 
+.mega #nav a:visited {
     color: #FFF;
 }
 
-#nav.mega a.mega:hover::before, #links.mega a.mega:hover::before, #work.mega a.mega:hover::before {
+.mega #nav a:hover::before, 
+.mega #links a:hover::before, 
+.mega #work a:hover::before {
     background-image: url('../img/mega/arrow-right.png');
 }
 
-#links.mega li.mega {
+.mega #links li {
     border-bottom: 2px solid #64b0ff;
 }
 
-#links.mega li.mega:last-child {
+.mega #links li:last-child {
     border-bottom: none;
 }
 
-#twitter-image.mega {
+.mega #twitter-image {
   content:url('../img/mega/twitter.png');
 }
 
-#github-image.mega {
+.mega #github-image {
   content:url('../img/mega/github.png');
 }
 
-#stackoverflow-image.mega {
+.mega #stackoverflow-image {
   content:url('../img/mega/stackoverflow.png');
 }
 
-#codepen-image.mega {
+.mega #codepen-image {
   content:url('../img/mega/codepen.png');
 }
 
-#linkedin-image.mega {
+.mega #linkedin-image {
   content:url('../img/mega/linkedin.png');
 }
 
-#steam-image.mega {
+.mega #steam-image {
   content:url('../img/mega/steam.png');
 }
 
-#facebook-image.mega {
+.mega #facebook-image {
   content:url('../img/mega/facebook.png');
 }
 
-#mail-image.mega {
+.mega #mail-image {
   content:url('../img/mega/mail.png');
 }
 
