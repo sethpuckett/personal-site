@@ -26,8 +26,8 @@ footer.mega {
   color: #868686;
 }
 
-a.mega {
-  color: #337ab7;
+a.mega, a.mega:hover, a.mega:hover, a.mega:active, a.mega:visited {
+    color: #337ab7;
 }
 
 .link-info.mega .username.mega, 
@@ -52,6 +52,14 @@ a.mega {
 
 #nav.mega a.mega:hover::before, #links.mega a.mega:hover::before, #work.mega a.mega:hover::before {
     background-image: url('../img/mega/arrow-right.png');
+}
+
+#links.mega li.mega {
+    border-bottom: 2px solid #64b0ff;
+}
+
+#links.mega li.mega:last-child {
+    border-bottom: none;
 }
 
 #twitter-image.mega {

@@ -26,8 +26,8 @@ footer.pac {
   color: #fff;
 }
 
-a.pac {
-  color: #b53120;
+a.pac, a.pac:hover, a.pac:hover, a.pac:active, a.pac:visited {
+    color: #b53120;
 }
 
 .link-info.pac .username.pac, 
@@ -52,6 +52,14 @@ a.pac {
 
 #nav.pac a.pac:hover::before, #links.pac a.pac:hover::before, #work.pac a.pac:hover::before {
     background-image: url('../img/pac/arrow-right.png');
+}
+
+#links.pac li.pac {
+    border-bottom: 2px solid #155fd9;
+}
+
+#links.pac li.pac:last-child {
+    border-bottom: none;
 }
 
 #twitter-image.pac {

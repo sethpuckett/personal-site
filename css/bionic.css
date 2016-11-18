@@ -26,8 +26,8 @@ footer.bionic {
   color: #666;
 }
 
-a.bionic {
-  color: #135a97;
+a.bionic, a.bionic:hover, a.bionic:hover, a.bionic:active, a.bionic:visited {
+    color: #135a97;
 }
 
 .link-info.bionic .username.bionic, 
@@ -52,6 +52,14 @@ a.bionic {
 
 #nav.bionic a.bionic:hover::before, #links.bionic a.bionic:hover::before, #work.bionic a.bionic:hover::before {
     background-image: url('../img/bionic/arrow-right.png');
+}
+
+#links.bionic li.bionic {
+    border-bottom: 2px solid #fff;
+}
+
+#links.bionic li.bionic:last-child {
+    border-bottom: none;
 }
 
 #twitter-image.bionic {
