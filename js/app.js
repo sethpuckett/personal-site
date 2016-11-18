@@ -131,24 +131,35 @@ function populatephotos(photos) {
 
 function setTheme(themeIndex) {
 
-  switch (themeIndex % 2) {
+  switch (themeIndex % 3) {
     case 0:
       setMegaTheme();
       break;
     case 1:
       setBionicTheme();
       break;
+    case 2:
+      setPacTheme();
+      break;
   }
 }
 
 function setMegaTheme() {
   $("*").removeClass("bionic");
+  $("*").removeClass("pac");
   $("*").addClass("mega");
 }
 
 function setBionicTheme() {
   $("*").removeClass("mega");
+  $("*").removeClass("pac");
   $("*").addClass("bionic");
+}
+
+function setPacTheme() {
+  $("*").removeClass("mega");
+  $("*").removeClass("bionic");
+  $("*").addClass("pac");
 }
 
 

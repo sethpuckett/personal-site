@@ -58,5 +58,33 @@ a.mega {
   content:url('../img/mega/twitter.png');
 }
 
+#github-image.mega {
+  content:url('../img/mega/github.png');
+}
+
+#stackoverflow-image.mega {
+  content:url('../img/mega/stackoverflow.png');
+}
+
+#codepen-image.mega {
+  content:url('../img/mega/codepen.png');
+}
+
+#linkedin-image.mega {
+  content:url('../img/mega/linkedin.png');
+}
+
+#steam-image.mega {
+  content:url('../img/mega/steam.png');
+}
+
+#facebook-image.mega {
+  content:url('../img/mega/facebook.png');
+}
+
+#mail-image.mega {
+  content:url('../img/mega/mail.png');
+}
+
 
 

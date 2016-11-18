@@ -1,0 +1,103 @@
+header.pac {
+  background: url('../img/pac/header.png') center center / 155px 75px repeat;
+}
+
+html.pac, body.pac {
+  color: #ea9e22;
+  background-color: #000;
+}
+
+footer.pac {
+  background: url('../img/pac/footer.png') repeat center center / 158px 75px;
+  padding-top: 42px;
+}
+
+.box.pac {
+  border-image: url('../img/pac/border.png');
+  border-image-slice: 30 30 30 30;
+  border-image-repeat: repeat;
+} 
+
+#theme-change.pac {
+  color: #b53120;
+}
+
+#location-description.pac {
+  color: #fff;
+}
+
+a.pac {
+  color: #b53120;
+}
+
+.link-info.pac .username.pac, 
+#projects.pac .description.pac, 
+#writing.pac .date.pac, 
+#schedule.pac .info.pac, 
+#schedule.pac .past.pac .title.pac {
+  color: #fff;
+}
+
+#nav.pac li.active.pac::before {
+    background-image: url('../img/pac/arrow-right.png');
+}
+
+#nav.pac li.active.pac::after {
+    background-image: url('../img/pac/arrow-left.png');
+}
+
+#nav.pac a.pac, #nav.pac a.pac:visited {
+    color: #b53120;
+}
+
+#nav.pac a.pac:hover::before, #links.pac a.pac:hover::before, #work.pac a.pac:hover::before {
+    background-image: url('../img/pac/arrow-right.png');
+}
+
+#twitter-image.pac {
+  content:url('../img/pac/twitter.png');
+}
+
+#github-image.pac {
+  content:url('../img/pac/github.png');
+}
+
+#stackoverflow-image.pac {
+  content:url('../img/pac/stackoverflow.png');
+}
+
+#codepen-image.pac {
+  content:url('../img/pac/codepen.png');
+}
+
+#linkedin-image.pac {
+  content:url('../img/pac/linkedin.png');
+}
+
+#steam-image.pac {
+  content:url('../img/pac/steam.png');
+}
+
+#facebook-image.pac {
+  content:url('../img/pac/facebook.png');
+}
+
+#mail-image.pac {
+  content:url('../img/pac/mail.png');
+}
+
+/*
+black: #000;
+white: #fff;
+orange: #ea9e22;
+blue: #155fd9;
+dark red: #6c0700;
+light red: #b53120;
+*/
+
+
+
+
+
+
+

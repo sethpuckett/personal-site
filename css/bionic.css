@@ -9,7 +9,7 @@ html.bionic, body.bionic {
 
 footer.bionic {
   background: url('../img/bionic/footer.png') repeat center center / 235px 75px;
-  padding-top: 40px;
+  padding-top: 41px;
 }
 
 .box.bionic {
@@ -47,7 +47,7 @@ a.bionic {
 }
 
 #nav.bionic a.bionic, #nav.bionic a.bionic:visited {
-    color: #b71e7b;
+    color: #e4e594;
 }
 
 #nav.bionic a.bionic:hover::before, #links.bionic a.bionic:hover::before, #work.bionic a.bionic:hover::before {
@@ -58,37 +58,39 @@ a.bionic {
   content:url('../img/bionic/twitter.png');
 }
 
+#github-image.bionic {
+  content:url('../img/bionic/github.png');
+}
+
+#stackoverflow-image.bionic {
+  content:url('../img/bionic/stackoverflow.png');
+}
+
+#codepen-image.bionic {
+  content:url('../img/bionic/codepen.png');
+}
+
+#linkedin-image.bionic {
+  content:url('../img/bionic/linkedin.png');
+}
+
+#steam-image.bionic {
+  content:url('../img/bionic/steam.png');
+}
+
+#facebook-image.bionic {
+  content:url('../img/bionic/facebook.png');
+}
+
+#mail-image.bionic {
+  content:url('../img/bionic/mail.png');
+}
+
 /*
 purple: #6e0040;
 magenta: #b71e7b;
 orange: #ea9e22;
 */
-
-
-/*
-    header
-    body background color
-    footer
-    border
-    body color
-    #theme-changer color
-    #location-description color
-    !!! a:hover color
-    .link-info .username, #projects .description, #writing .date, #schedule .info, #schedule .past .title 
-      color
-    arrow
-    arrow left
-    nav a color
-
-    social media icons
-    text color
-    header color
-    description color
-    link color
-    link:hover color
-  */
-
-
 
 
 
