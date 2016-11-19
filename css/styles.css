@@ -2,11 +2,6 @@
 * Shared
 ************************/
 
-@font-face {
-    font-family: 'PressStart2P';
-    src: url("../fonts/PressStart2p.ttf");
-}
-
 * {
     box-sizing: border-box;
 } 
@@ -68,7 +63,7 @@ li {
     margin-bottom: 15px;
 }
 
-a, a:hover, a:hover, a:active, a:visited {
+a, a:hover, a:active, a:visited {
     text-decoration: none;
     color: #337ab7;
 }
@@ -121,7 +116,7 @@ a, a:hover, a:hover, a:active, a:visited {
 html, body {
     height: 100%;
     font-size: 10px;
-    font-family: 'PressStart2P', serif;
+    font-family: 'Press Start 2P', serif;
     color: #505050;
     background-color: #FFCCC5;
 }
@@ -280,9 +275,38 @@ footer {
     display: inline-block;
 }
 
-#links .logo img {
-    width: 100%;
+#mail-image {
+    background: url("../img/mega/mail.png");
 }
+
+#twitter-image {
+    background: url("../img/mega/twitter.png");
+}
+
+#github-image {
+    background: url("../img/mega/github.png");
+}
+
+#stackoverflow-image {
+    background: url("../img/mega/stackoverflow.png");
+}
+
+#codepen-image {
+    background: url("../img/mega/codepen.png");
+}
+
+#linkedin-image {
+    background: url("../img/mega/linkedin.png");
+}
+
+#steam-image {
+    background: url("../img/mega/steam.png");
+}
+
+#facebook-image {
+    background: url("../img/mega/facebook.png");
+}
+
 
 #links li {
     position: relative;

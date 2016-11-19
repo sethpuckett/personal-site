@@ -69,37 +69,38 @@ html.bionic, body.bionic {
     border-bottom: none;
 }
 
+.bionic #mail-image {
+    background: url("../img/bionic/mail.png");
+}
+
 .bionic #twitter-image {
-  content:url('../img/bionic/twitter.png');
+    background: url("../img/bionic/twitter.png");
 }
 
 .bionic #github-image {
-  content:url('../img/bionic/github.png');
+    background: url("../img/bionic/github.png");
 }
 
 .bionic #stackoverflow-image {
-  content:url('../img/bionic/stackoverflow.png');
+    background: url("../img/bionic/stackoverflow.png");
 }
 
 .bionic #codepen-image {
-  content:url('../img/bionic/codepen.png');
+    background: url("../img/bionic/codepen.png");
 }
 
 .bionic #linkedin-image {
-  content:url('../img/bionic/linkedin.png');
+    background: url("../img/bionic/linkedin.png");
 }
 
 .bionic #steam-image {
-  content:url('../img/bionic/steam.png');
+    background: url("../img/bionic/steam.png");
 }
 
 .bionic #facebook-image {
-  content:url('../img/bionic/facebook.png');
+    background: url("../img/bionic/facebook.png");
 }
 
-.bionic #mail-image {
-  content:url('../img/bionic/mail.png');
-}
 
 /*
 purple: #6e0040;

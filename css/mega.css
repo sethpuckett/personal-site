@@ -69,37 +69,38 @@ html.mega, body.mega {
     border-bottom: none;
 }
 
+.mega #mail-image {
+    background: url("../img/mega/mail.png");
+}
+
 .mega #twitter-image {
-  content:url('../img/mega/twitter.png');
+    background: url("../img/mega/twitter.png");
 }
 
 .mega #github-image {
-  content:url('../img/mega/github.png');
+    background: url("../img/mega/github.png");
 }
 
 .mega #stackoverflow-image {
-  content:url('../img/mega/stackoverflow.png');
+    background: url("../img/mega/stackoverflow.png");
 }
 
 .mega #codepen-image {
-  content:url('../img/mega/codepen.png');
+    background: url("../img/mega/codepen.png");
 }
 
 .mega #linkedin-image {
-  content:url('../img/mega/linkedin.png');
+    background: url("../img/mega/linkedin.png");
 }
 
 .mega #steam-image {
-  content:url('../img/mega/steam.png');
+    background: url("../img/mega/steam.png");
 }
 
 .mega #facebook-image {
-  content:url('../img/mega/facebook.png');
+    background: url("../img/mega/facebook.png");
 }
 
-.mega #mail-image {
-  content:url('../img/mega/mail.png');
-}
 
 
 

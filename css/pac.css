@@ -69,37 +69,38 @@ html.pac, body.pac {
     border-bottom: none;
 }
 
+.pac #mail-image {
+    background: url("../img/pac/mail.png");
+}
+
 .pac #twitter-image {
-  content:url('../img/pac/twitter.png');
+    background: url("../img/pac/twitter.png");
 }
 
 .pac #github-image {
-  content:url('../img/pac/github.png');
+    background: url("../img/pac/github.png");
 }
 
 .pac #stackoverflow-image {
-  content:url('../img/pac/stackoverflow.png');
+    background: url("../img/pac/stackoverflow.png");
 }
 
 .pac #codepen-image {
-  content:url('../img/pac/codepen.png');
+    background: url("../img/pac/codepen.png");
 }
 
 .pac #linkedin-image {
-  content:url('../img/pac/linkedin.png');
+    background: url("../img/pac/linkedin.png");
 }
 
 .pac #steam-image {
-  content:url('../img/pac/steam.png');
+    background: url("../img/pac/steam.png");
 }
 
 .pac #facebook-image {
-  content:url('../img/pac/facebook.png');
+    background: url("../img/pac/facebook.png");
 }
 
-.pac #mail-image {
-  content:url('../img/pac/mail.png');
-}
 
 /*
 black: #000;
