@@ -10,7 +10,7 @@ $(document).ready(function() {
 
   $("#nav a").on("click", updateTab);
 
-  $("#theme-change").on("click", function() {
+  $(".theme-change").on("click", function() {
     themeIndex++;
     setTheme(themeIndex);
   });
@@ -39,10 +39,10 @@ function updateThemeChangePosition() {
   var diff = pageHeight - windowBottom;
 
   if(diff < 65) {
-      $("#theme-change").css("bottom", 85 - diff);
+      $("#theme-change-bottom").css("bottom", 85 - diff);
 
   } else {
-      $("#theme-change").css("bottom", 20);
+      $("#theme-change-bottom").css("bottom", 20);
   }
 }
 

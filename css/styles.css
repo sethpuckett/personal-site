@@ -53,6 +53,7 @@
 
 ul {
     list-style: none;
+    margin-bottom: 0px;
     margin-top: 5px;
     padding-left: 25px;
     padding-right: 25px;
@@ -132,13 +133,17 @@ html, body {
     padding-bottom: 65px;
 }
 
-#theme-change {
+.theme-change {
     color: #868686;
     font-size: .8em;
     cursor: pointer;
     position: fixed;
     bottom: 20px;
     left: 20px;
+}
+
+#theme-change-top-row {
+    display: none;
 }
 
 /************************
@@ -372,11 +377,18 @@ footer {
         margin-right: 5%;
     }
 
-    #theme-change {
+    #theme-change-top-row {
+        display: block;
+    }
+
+    #theme-change-bottom-row {
+        padding-top: 15px; 
+    }
+
+    .theme-change {
         font-size: 1em;
         position: static;
         text-align: center;
-        padding-top: 15px;
         padding-bottom: 30px;
     }
 }
