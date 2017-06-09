@@ -318,13 +318,13 @@ footer {
 
 #links li {
     position: relative;
-    margin-bottom: 3px;
-    padding-bottom: 3px;
-    border-bottom: 2px solid #64b0ff;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #64b0ff;
 }
 
 #links li:last-child {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding-bottom: 0;
     border-bottom: none;
 }
