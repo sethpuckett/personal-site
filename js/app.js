@@ -1,16 +1,16 @@
-$(document).ready(function() {
+$(document).ready(function () {
   var themeIndex = 0;
 
   var SPREADSHEET_KEY = '1LPsEpOMl2bfK_leLCJRL5LEXnutoOoTv1mMiln7IytE';
 
-  Tabletop.init({ 
+  Tabletop.init({
     key: SPREADSHEET_KEY,
     callback: loadSpreadsheetData
   });
 
   $("#nav a").on("click", updateTab);
 
-  $(".theme-change").on("click", function() {
+  $(".theme-change").on("click", function () {
     themeIndex++;
     setTheme(themeIndex);
   });
@@ -38,11 +38,11 @@ function updateThemeChangePosition() {
 
   var diff = pageHeight - windowBottom;
 
-  if(diff < 65) {
-      $("#theme-change-bottom").css("bottom", 85 - diff);
+  if (diff < 65) {
+    $("#theme-change-bottom").css("bottom", 85 - diff);
 
   } else {
-      $("#theme-change-bottom").css("bottom", 20);
+    $("#theme-change-bottom").css("bottom", 20);
   }
 }
 
@@ -63,10 +63,13 @@ function populateGeneral(general) {
       $("#location-text").text(value);
     } else if (field === "map-url") {
       $("#location-map").html(value);
+    } else if (field === 'resume-url') {
+      $("#resume-loader").hide();
+      $("#resume-content").html(value);
     }
 
     updateThemeChangePosition();
-  }  
+  }
 }
 
 function populateSchedule(schedule) {
@@ -79,7 +82,7 @@ function populateSchedule(schedule) {
     var venue = schedule.elements[i].venue;
     var link = schedule.elements[i].link;
 
-    var li = "<li><a href='"+link+"'><div class='title'>"+title+"</div><div class='info'>"+venue+", "+date+"</div></a></li>";
+    var li = "<li><a href='" + link + "'><div class='title'>" + title + "</div><div class='info'>" + venue + ", " + date + "</div></a></li>";
 
     list.append(li);
   }
@@ -94,7 +97,7 @@ function populateWriting(writing) {
     var date = writing.elements[i].date;
     var link = writing.elements[i].link;
 
-    var li = "<li><a href='"+link+"'><div class='title'>"+title+"</div><div class='date'>"+date+"</div></a></li>";
+    var li = "<li><a href='" + link + "'><div class='title'>" + title + "</div><div class='date'>" + date + "</div></a></li>";
 
     list.append(li);
   }
@@ -109,7 +112,7 @@ function populateProjects(projects) {
     var description = projects.elements[i].description;
     var link = projects.elements[i].link;
 
-    var li = "<li><a href='"+link+"'><div class='title'>"+title+"</div><div class='description'>"+description+"</div></a></li>";
+    var li = "<li><a href='" + link + "'><div class='title'>" + title + "</div><div class='description'>" + description + "</div></a></li>";
 
     list.append(li);
   }
@@ -123,7 +126,7 @@ function populatephotos(photos) {
     var url = photos.elements[i].url;
     var alt = photos.elements[i].alt;
 
-    var img = "<div class='col-sm-4 col'><div class='box'><a href='"+url+"' data-lightbox='image-"+i+"' data-title='"+alt+"'><img src='"+url+"' alt='"+alt+"'></a></div></div>";
+    var img = "<div class='col-sm-4 col'><div class='box'><a href='" + url + "' data-lightbox='image-" + i + "' data-title='" + alt + "'><img src='" + url + "' alt='" + alt + "'></a></div></div>";
 
     list.append(img);
   }
