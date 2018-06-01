@@ -69,6 +69,10 @@ html.bionic, body.bionic {
     border-bottom: none;
 }
 
+.bionic #links .logo {
+    background-size: 100% 100%;
+}
+
 .bionic #mail-image {
     background: url("../img/bionic/mail.png");
 }

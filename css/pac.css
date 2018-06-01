@@ -69,6 +69,10 @@ html.pac, body.pac {
     border-bottom: none;
 }
 
+.pac #links .logo {
+    background-size: 100% 100%;
+}
+
 .pac #mail-image {
     background: url("../img/pac/mail.png");
 }

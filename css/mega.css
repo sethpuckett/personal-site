@@ -69,6 +69,10 @@ html.mega, body.mega {
     border-bottom: none;
 }
 
+.mega #links .logo {
+    background-size: 100% 100%;
+}
+
 .mega #mail-image {
     background: url("../img/mega/mail.png");
 }

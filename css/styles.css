@@ -282,9 +282,10 @@ footer {
 ************************/
 
 #links .logo {
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     display: inline-block;
+    background-size: 100% 100%;
 }
 
 #mail-image {
@@ -322,20 +323,20 @@ footer {
 
 #links li {
     position: relative;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
+    margin-bottom: 19px;
+    padding-bottom: 19px;
     border-bottom: 3px solid #64b0ff;
 }
 
 #links li:last-child {
-    margin-bottom: 10px;
-    padding-bottom: 0;
+    margin-bottom: 19px;
     border-bottom: none;
 }
 
 .link-info {
     display: inline-block;
     padding-left: 10px;
+    padding-bottom: 20px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
