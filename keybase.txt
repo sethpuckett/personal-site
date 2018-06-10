@@ -1,0 +1,89 @@
+
+==================================================================
+https://keybase.io/sethpuckett
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://sethpuckett.com
+  * I am sethpuckett (https://keybase.io/sethpuckett) on keybase.
+  * I have a public key with fingerprint 069C 8683 71FE 329D A49F  2040 8C58 3BA9 7A74 CC7A
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012060ba5a9426f44e7f7e3ae4892b24ce999f799d231d2938383ad6116f46d3c2ce0a",
+      "fingerprint": "069c868371fe329da49f20408c583ba97a74cc7a",
+      "host": "keybase.io",
+      "key_id": "8c583ba97a74cc7a",
+      "kid": "010107965dbf2d928ad1ecb7338afb03073fb60e6acd8f634b26e07219b1086d7d840a",
+      "uid": "dfef03c456e976b8d8194db225f29919",
+      "username": "sethpuckett"
+    },
+    "merkle_root": {
+      "ctime": 1528643178,
+      "hash_meta": "4aba59c8b32fdfe0931a2ed414574b778d5e46e7c917f8534132fe39602250af",
+      "seqno": 3054341
+    },
+    "revoke": {
+      "sig_ids": [
+        "52a4a673133b55c761fb206b522fc38f0a7e4fc23b50871c56324e71d48d51bc0f"
+      ]
+    },
+    "service": {
+      "hostname": "sethpuckett.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1528643183,
+  "expire_in": 157680000,
+  "prev": "9fbb80da9b359683d594a10fa9dfc7d3fa02c174524c1d1c5a48fdecfeebbaf1",
+  "seqno": 23,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMQAAnicbVN9bBRFFD8KJVoKBSNIDR91E1Sklp3d2Y+5QkUqEBSiSECl1GNmZ6Z3
+vfb2urctluYAA6UpKBIQlFAF+RAoKGAitjVUgQOLRVOQj4BUKbaESrSJGBBb0dlG
+YqLu/LHZfb/3e7/3e28SA/v6Uvq89mL27kXuyUV9mo9UlPryRubYFRKxabnkr5DC
+rPfFiiiLuYFwiEp+SQaKrMsEaxhBRecQMoMbTMUMmkghCrQYQogbCFFFBVRBqikO
+pjoAAqxT1VIsJmMpU+KhSAFzok4o4nq0OrJM3VQNwJmqIIoh4ooMZdPSTJVgZGAD
+WpbhJQbtmJchxBEcY1khW/wTH4Feef+Dv6tbHAPpGiVcoUgxMQXMIoaqmpgTWZUN
+lRNdZjq2qMl1FRJFZ7KhAESAbOrUoCbs1V3aS0c547JqQU1nyNCJSU2AICWKonEF
+IYA8YIw5EVzMBDrG3GC01Aoz15XimVIxc8JFLODYtuv5a7khDwU0xdShCgxT9Ihj
+wUAxc7FIhli4LdwhqsJFWRmpACuMQgA1AxLDMKnGoM4MCwGDm5oKgQAyFemyUCNj
+LqTEWEnElvyqrEERFgocVmaHmVc8FioQzsUkf56kKRhi3VCBqhJNswwdcCKGTTRF
+4ZZqchkbDHJLEVHZNICl6aoixg8oFBIAsWQu5ce9Yk5ZyOol90b1XwuyLLtYiIo6
+tmtbdpEIBl036vecccujHnghI4G/aQIkFKFiVURCGXNiITsinBLIf5lmqpkSeyUa
+clgg5CE0Qzdl8XhlWJmgRJwQU6YYEVVDYtGohiAGMseIcsugKseyYgEDamKFARXN
+YWhyyizOGCGYg39cVEQpFxd4PYUKItgtdZgUP3J4fj9fnxRf/+Qk7w75Uu4dfPdm
+3ehO60lb/vaEh3xXV2R0t455a8SQuXsu/L4itu/U0QM3T27b/nX1sVnLZr+bHRyX
+Nck+l1bGw+D9rRsu5a6sWnitenFdxp0TcvTi0LT620uP88Ypq50tqY8eOlzPmlPi
+T9Q1xOq7cpyMuvqWMY/NaRyy6bctlxvX92zYzufsfR3kT/3uWZQ9PqcSvnTlyg8P
+33P2kc6CvpE7hQ05w06fz+lX+WFDoj3zncvgtDRyXHB9+cVXk5MfTFszz5yWHR++
+9eDR/dc6C5fdye46O3bm1uLJzue3V9cseSqR+u0a/7zWs8d3/TEwl7x3/44tVahp
+al396N1tO8L52259umfS8p0dlVOqT+yvqXzy+71Nu1quL//i5WnX18N9O2cO+Dna
+NrbhmxkL2radSjozf+74A6R5RC1tGTX9qJU7emDFuhlo0djpf86Kr2ud8MuS1CR/
+22cV8SHp6c109lIzdVLTjskdH3V3FbW3pT/zQM+C/pnHa+DjhY2Dq5Ye8+/Linb+
+9PQoVPvCrJINfr6gKd1wI9M3zRuWlHjTXNky6NeTw3tuBVLfGJPwjSpKdJfkfRm9
+eSaRv7iATlw7KPfS6M1NEzcdWpXI+zHyyZGOcwtrOmd27ZlQG7+w5L5r6UNvJpdl
+jEj6+ODGtRnhZZubm9uDz4280dRekjpg2sVDebGay05WDWs9X9n91Vy8saS8Iien
+uuNqa6EMaz+oKoWB5/8CF6IHIw==
+=4g8z
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sethpuckett
+
+==================================================================
