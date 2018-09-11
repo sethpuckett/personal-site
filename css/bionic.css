@@ -55,9 +55,12 @@ html.bionic, body.bionic {
     color: #e4e594;
 }
 
-.bionic #nav a:hover::before, 
-.bionic #links a:hover::before, #work 
-.bionic a:hover::before {
+.bionic #nav a:hover::after {
+    background-image: url('../img/bionic/arrow-left.png');
+}
+
+.bionic #links a:hover::before,
+.bionic #work a:hover::before {
     background-image: url('../img/bionic/arrow-right.png');
 }
 

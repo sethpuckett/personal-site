@@ -8,6 +8,12 @@ $(document).ready(function () {
     callback: loadSpreadsheetData
   });
 
+  $('#pictures').slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: false
+  });
+
   $("#nav a").on("click", updateTab);
 
   $(".theme-change").on("click", function () {
@@ -115,20 +121,6 @@ function populateProjects(projects) {
     var li = "<li><a href='" + link + "'><div class='title'>" + title + "</div><div class='description'>" + description + "</div></a></li>";
 
     list.append(li);
-  }
-}
-
-function populatephotos(photos) {
-  $("#photos-loader").hide();
-  var list = $("#photos .row-fluid");
-
-  for (var i = photos.elements.length - 1; i >= 0; i--) {
-    var url = photos.elements[i].url;
-    var alt = photos.elements[i].alt;
-
-    var img = "<div class='col-sm-4 col'><div class='box'><a href='" + url + "' data-lightbox='image-" + i + "' data-title='" + alt + "'><img src='" + url + "' alt='" + alt + "'></a></div></div>";
-
-    list.append(img);
   }
 }
 

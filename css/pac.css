@@ -55,7 +55,10 @@ html.pac, body.pac {
     color: #b53120;
 }
 
-.pac #nav a:hover::before, 
+.pac #nav a:hover::after {
+    background-image: url('../img/pac/arrow-left.png');
+}
+
 .pac #links a:hover::before, 
 .pac #work a:hover::before {
     background-image: url('../img/pac/arrow-right.png');

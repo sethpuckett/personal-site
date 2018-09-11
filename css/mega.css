@@ -55,7 +55,10 @@ html.mega, body.mega {
     color: #FFF;
 }
 
-.mega #nav a:hover::before, 
+.mega #nav a:hover::after {
+    background-image: url('../img/mega/arrow-left.png');
+}
+
 .mega #links a:hover::before, 
 .mega #work a:hover::before {
     background-image: url('../img/mega/arrow-right.png');
