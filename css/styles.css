@@ -128,7 +128,7 @@ a, a:hover, a:active, a:visited {
 
 html, body {
     height: 100%;
-    font-size: 9px;
+    font-size: 10px;
     font-family: 'Press Start 2P', serif;
     color: #505050;
     background-color: #FFCCC5;
@@ -251,7 +251,7 @@ footer {
 }
 
 #bio p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 /************************
@@ -311,6 +311,10 @@ footer {
 
 #twitter-image {
     background: url("../img/mega/twitter.png");
+}
+
+#instagram-image {
+    background: url("../img/mega/instagram.png");
 }
 
 #github-image {

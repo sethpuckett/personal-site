@@ -84,6 +84,10 @@ html.bionic, body.bionic {
     background: url("../img/bionic/twitter.png");
 }
 
+.bionic #instagram-image {
+    background: url("../img/bionic/instagram.png");
+}
+
 .bionic #github-image {
     background: url("../img/bionic/github.png");
 }

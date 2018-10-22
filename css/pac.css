@@ -84,6 +84,10 @@ html.pac, body.pac {
     background: url("../img/pac/twitter.png");
 }
 
+.pac #instagram-image {
+    background: url("../img/pac/instagram.png");
+}
+
 .pac #github-image {
     background: url("../img/pac/github.png");
 }

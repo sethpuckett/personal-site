@@ -84,6 +84,10 @@ html.mega, body.mega {
     background: url("../img/mega/twitter.png");
 }
 
+.mega #instagram-image {
+    background: url("../img/mega/instagram.png");
+}
+
 .mega #github-image {
     background: url("../img/mega/github.png");
 }

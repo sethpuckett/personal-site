@@ -67,8 +67,8 @@ function populateGeneral(general) {
 
     if (field === "location") {
       $("#location-text").text(value);
-    } else if (field === "map-url") {
-      $("#location-map").html(value);
+    } else if (field === "location-url") {
+      $("#location-url").attr("href", value);
     } else if (field === 'resume-url') {
       $("#resume-loader").hide();
       $("#resume-content").html(value);
