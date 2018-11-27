@@ -14,6 +14,12 @@ $(document).ready(function () {
     arrows: false
   });
 
+  $('#pictures-compact').slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: false
+  });
+
   $("#nav a").on("click", updateTab);
 
   $(".theme-change").on("click", function () {
@@ -57,7 +63,6 @@ function loadSpreadsheetData(data, tabletop) {
   populateSchedule(data.schedule);
   populateWriting(data.writing);
   populateProjects(data.projects);
-  populatephotos(data.photos);
 }
 
 function populateGeneral(general) {

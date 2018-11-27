@@ -253,13 +253,13 @@ footer {
     margin-bottom: 20px;
 }
 
-#pgp-key {
+.pgp-key {
     font-size: 14px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-#pgp-link {
+.pgp-link {
     font-size: 11px;
     text-align: center;
     margin-top: 20px;
@@ -318,12 +318,14 @@ footer {
 * Pictures
 ************************/
 
-#pictures img {
+#pictures img, #pictures-compact img {
     width: 100%;
     height: auto;
 }
 
-
+#pictures-compact-container {
+    display: none;
+}
 
 /************************
 * Links
@@ -442,13 +444,13 @@ footer {
         margin-bottom: 20px;
     }
     
-    #pgp-key {
+    .pgp-key {
         font-size: 10px;
         text-align: center;
         margin-bottom: 20px;
     }
     
-    #pgp-link {
+    .pgp-link {
         font-size: 10px;
         text-align: center;
         margin-top: 20px;
@@ -474,7 +476,27 @@ footer {
         display: none;
     }
 
+    #pictures {
+        display: none;
+    }
+
     #pgp-info-compact {
+        display: block;
+    }
+
+    #pgp-info-compact h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .pgp-key {
+        font-size: 1.25em;
+        text-align: center;
+        padding: .5em;
+        margin-bottom: 0;
+    }
+
+    #pictures-compact-container {
         display: block;
     }
 
@@ -484,6 +506,7 @@ footer {
 
     #nav-wrapper h1 {
         text-align: center;
+        font-size: 2.5em;
     }
 
     #nav {
@@ -501,7 +524,7 @@ footer {
     }
 
     #theme-change-bottom-row {
-        padding-top: 15px;
+        display: none;
     }
 
     .theme-change {
@@ -509,6 +532,10 @@ footer {
         position: static;
         text-align: center;
         padding-bottom: 30px;
+    }
+
+    .tall-box-fixed {
+        height: auto;
     }
 }
 
