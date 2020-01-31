@@ -1,6 +1,8 @@
 $(document).ready(function () {
   var themeIndex = 0;
 
+  setCopyrightYear();
+
   var SPREADSHEET_KEY = '1LPsEpOMl2bfK_leLCJRL5LEXnutoOoTv1mMiln7IytE';
 
   Tabletop.init({
@@ -30,6 +32,10 @@ $(document).ready(function () {
   $(window).on("load resize scroll", updateThemeChangePosition);
 
 });
+
+function setCopyrightYear() {
+  $('#current-year').text(new Date().getFullYear());
+}
 
 function updateTab(event) {
   event.preventDefault();
@@ -93,7 +99,7 @@ function populateSchedule(schedule) {
     var venue = schedule.elements[i].venue;
     var link = schedule.elements[i].link;
 
-    var li = "<li><a href='" + link + "'><div class='title'>" + title + "</div><div class='info'>" + venue + ", " + date + "</div></a></li>";
+    var li = "<li><a href='" + link + "'><div class='title'>" + title + "</div><div class='info'>" + venue + "</div></a></li>";
 
     list.append(li);
   }
@@ -108,7 +114,7 @@ function populateWriting(writing) {
     var date = writing.elements[i].date;
     var link = writing.elements[i].link;
 
-    var li = "<li><a href='" + link + "'><div class='title'>" + title + "</div><div class='date'>" + date + "</div></a></li>";
+    var li = "<li><a href='" + link + "'><div class='title'>" + title + "</div></div></a></li>";
 
     list.append(li);
   }
