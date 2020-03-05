@@ -49,7 +49,7 @@
 }
 
 .tall-box-fixed {
-    height: 650px;
+    height: 693px;
 }
 
 ul {
@@ -102,17 +102,17 @@ a, a:hover, a:active, a:visited {
     margin-top: -2px;
 }
 
-.link-info .service, #projects .title, #writing .title, #schedule .title {
+.link-info .service, #projects .title {
     font-size: 1.3em;
 }
 
-.link-info .username, #projects .description, #writing .date, #schedule .info, #schedule .past .title {
+.link-info .username, #projects .info {
     padding-left: 2px;
     color: #868686;
     font-size: .8em;
 }
 
-#projects h1, #writing h1, #schedule h1 {
+#projects h1 {
     font-size: 2em;
     text-align: center;
     margin-bottom: 30px;

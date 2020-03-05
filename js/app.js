@@ -66,8 +66,6 @@ function updateThemeChangePosition() {
 
 function loadSpreadsheetData(data, tabletop) {
   populateGeneral(data.general);
-  populateSchedule(data.schedule);
-  populateWriting(data.writing);
   populateProjects(data.projects);
 }
 
@@ -89,47 +87,17 @@ function populateGeneral(general) {
   }
 }
 
-function populateSchedule(schedule) {
-  $("#schedule-loader").hide();
-  var list = $("#schedule ul");
-
-  for (var i = schedule.elements.length - 1; i >= 0; i--) {
-    var title = schedule.elements[i].title;
-    var date = schedule.elements[i].date;
-    var venue = schedule.elements[i].venue;
-    var link = schedule.elements[i].link;
-
-    var li = "<li><a href='" + link + "'><div class='title'>" + title + "</div><div class='info'>" + venue + "</div></a></li>";
-
-    list.append(li);
-  }
-}
-
-function populateWriting(writing) {
-  $("#writing-loader").hide();
-  var list = $("#writing ul");
-
-  for (var i = writing.elements.length - 1; i >= 0; i--) {
-    var title = writing.elements[i].title;
-    var date = writing.elements[i].date;
-    var link = writing.elements[i].link;
-
-    var li = "<li><a href='" + link + "'><div class='title'>" + title + "</div></div></a></li>";
-
-    list.append(li);
-  }
-}
-
 function populateProjects(projects) {
   $("#projects-loader").hide();
   var list = $("#projects ul");
 
   for (var i = projects.elements.length - 1; i >= 0; i--) {
     var title = projects.elements[i].title;
-    var description = projects.elements[i].description;
+    var date = projects.elements[i].date;
+    var info = projects.elements[i].info;
     var link = projects.elements[i].link;
 
-    var li = "<li><a href='" + link + "'><div class='title'>" + title + "</div><div class='description'>" + description + "</div></a></li>";
+    var li = "<li><a href='" + link + "' target='_blank'><div class='title'>" + title + "</div><div class='info'>" + info + "</div></a></li>";
 
     list.append(li);
   }
