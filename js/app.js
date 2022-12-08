@@ -3,13 +3,6 @@ $(document).ready(function () {
 
   setCopyrightYear();
 
-  var SPREADSHEET_KEY = '1LPsEpOMl2bfK_leLCJRL5LEXnutoOoTv1mMiln7IytE';
-
-  Tabletop.init({
-    key: SPREADSHEET_KEY,
-    callback: loadSpreadsheetData
-  });
-
   $('#pictures').slick({
     autoplay: true,
     autoplaySpeed: 4000,
